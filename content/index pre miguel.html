@@ -1,0 +1,413 @@
+<div class="space-y-8 pb-12">
+    
+    <!-- Encabezado Principal del Índice -->
+    <div class="border-b border-radio-border pb-6">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-radio-cyan/10 border border-radio-cyan/30 text-radio-cyan text-xs font-mono mb-3">
+            <i class="fa-solid fa-list-ol"></i>
+            <span>ESTRUCTURA TÁCTICA DEL MANUAL</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+            ÍNDICE GENERAL DE <span class="text-radio-accent text-glow">CONTENIDOS</span>
+        </h1>
+        <p class="text-slate-400 text-xs md:text-sm mt-2 max-w-3xl leading-relaxed">
+            Explora la guía completa compuesta por 13 capítulos organizados en 6 módulos de aprendizaje progresivo. Haz clic en cualquiera de los capítulos disponibles para sintonizar su contenido.
+        </p>
+    </div>
+
+    <!-- MÓDULO 0 -->
+    <div class="space-y-4">
+        <div class="flex items-center space-x-3 text-radio-accent font-mono text-sm font-bold border-l-2 border-radio-accent pl-3">
+            <i class="fa-solid fa-cubes"></i>
+            <span>MÓDULO 0: FUNDAMENTOS DEL ESPECTRO</span>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4">
+            <!-- Cap 0 -->
+            <div class="p-4 md:p-5 rounded-xl bg-radio-panel border border-radio-border hover:border-radio-accent/50 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-2 flex-1">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-2.5 py-0.5 rounded bg-radio-accent/20 border border-radio-accent/40 text-radio-accent text-xs font-mono font-bold">CAP 0</span>
+                        <h3 class="text-base font-bold text-white">El Mapa del Tesoro Electromagnético</h3>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Introducción al mundo SDR. Conceptos fundamentales de física electromagnética (frecuencia, longitud de onda, amplitud), elección de hardware (RTL-SDR v4, HackRF) y primer contacto con el software SDR++.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-400 pt-1">
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border"><i class="fa-solid fa-microchip text-radio-accent mr-1"></i> RTL-SDR</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border"><i class="fa-solid fa-wave-square text-radio-cyan mr-1"></i> Espectro RF</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border"><i class="fa-solid fa-laptop-code text-amber-400 mr-1"></i> SDR++ Setup</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="loadChapter('cap0')" class="w-full md:w-auto px-4 py-2 rounded-lg bg-radio-accent text-radio-dark text-xs font-bold hover:bg-emerald-300 transition-all flex items-center justify-center space-x-2">
+                        <span>Iniciar Capítulo</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MÓDULO 1 -->
+    <div class="space-y-4 pt-4">
+        <div class="flex items-center space-x-3 text-radio-cyan font-mono text-sm font-bold border-l-2 border-radio-cyan pl-3">
+            <i class="fa-solid fa-walkie-talkie"></i>
+            <span>MÓDULO 1: VISIÓN DIRECTA (VHF / UHF)</span>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4">
+            <!-- Cap 1 -->
+            <div class="p-4 md:p-5 rounded-xl bg-radio-panel border border-radio-border hover:border-radio-cyan/50 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-2 flex-1">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-2.5 py-0.5 rounded bg-radio-cyan/20 border border-radio-cyan/40 text-radio-cyan text-xs font-mono font-bold">CAP 1</span>
+                        <h3 class="text-base font-bold text-white">PMR446, Walkie-Talkies y Subtonos</h3>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Cacería de señales en la banda libre de 446 MHz. Estudio práctico de la modulación FM (NFM/WFM), cálculo de desviación de audio e identificación visual/auditiva de subtonos CTCSS y códigos DCS en la cascada.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-400 pt-1">
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border"><i class="fa-solid fa-signal text-radio-cyan mr-1"></i> 446 MHz</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border"><i class="fa-solid fa-sliders text-radio-accent mr-1"></i> CTCSS / DCS</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border"><i class="fa-solid fa-headphones text-purple-400 mr-1"></i> Modulación FM</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="loadChapter('cap1')" class="w-full md:w-auto px-4 py-2 rounded-lg bg-radio-cyan text-radio-dark text-xs font-bold hover:bg-cyan-300 transition-all flex items-center justify-center space-x-2">
+                        <span>Iniciar Capítulo</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cap 2 -->
+            <div class="p-4 md:p-5 rounded-xl bg-radio-panel border border-radio-border hover:border-radio-border/80 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-2 flex-1">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 text-xs font-mono font-bold">CAP 2</span>
+                        <h3 class="text-base font-bold text-white">Banda Aérea Civil (VHF AM)</h3>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Sintonización de transmisiones aeronáuticas en 118 - 137 MHz. Fundamentos de la Modulación en Amplitud (AM), efecto captura, frecuencias TWR, GND, APP y decodificación de boletines meteorológicos ATIS.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-500 pt-1">
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">118-137 MHz</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">AM Civil</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">Torre & ATIS</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="loadChapter('cap2')" class="w-full md:w-auto px-4 py-2 rounded-lg bg-radio-dark border border-radio-border text-slate-300 hover:text-white hover:border-slate-500 text-xs font-bold transition-all flex items-center justify-center space-x-2">
+                        <span>Ver Capítulo</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cap 3 -->
+            <div class="p-4 md:p-5 rounded-xl bg-radio-panel border border-radio-border hover:border-radio-border/80 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-2 flex-1">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 text-xs font-mono font-bold">CAP 3</span>
+                        <h3 class="text-base font-bold text-white">Repetidores y Redes RPT</h3>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Anatomía de los repetidores de radioaficionados y servicios comunitarios. Desplazamiento de frecuencia (offset / duplex), ráfaga de 1750 Hz, colas de repetidor y cálculos de zona de cobertura.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-500 pt-1">
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">Offset / Shift</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">Tono 1750 Hz</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">VHF/UHF RPT</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="loadChapter('cap3')" class="w-full md:w-auto px-4 py-2 rounded-lg bg-radio-dark border border-radio-border text-slate-300 hover:text-white hover:border-slate-500 text-xs font-bold transition-all flex items-center justify-center space-x-2">
+                        <span>Ver Capítulo</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MÓDULO 2 -->
+    <div class="space-y-4 pt-4">
+        <div class="flex items-center space-x-3 text-emerald-400 font-mono text-sm font-bold border-l-2 border-emerald-400 pl-3">
+            <i class="fa-solid fa-ship"></i>
+            <span>MÓDULO 2: DIGITAL & MARÍTIMO</span>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4">
+            <!-- Cap 4 -->
+            <div class="p-4 md:p-5 rounded-xl bg-radio-panel border border-radio-border hover:border-radio-border/80 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-2 flex-1">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 text-xs font-mono font-bold">CAP 4</span>
+                        <h3 class="text-base font-bold text-white">Banda Marítima VHF & Sistema DSC</h3>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Navegación por la banda marina en 156-162 MHz. Escucha del canal 16 de emergencia y decodificación de mensajes digitales DSC (Llamada Selectiva Digital) en el canal 70 (156.525 MHz).
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-500 pt-1">
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">Canal 16 / 70</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">DSC Decoder</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">Seguridad Marina</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="loadChapter('cap4')" class="w-full md:w-auto px-4 py-2 rounded-lg bg-radio-dark border border-radio-border text-slate-300 hover:text-white hover:border-slate-500 text-xs font-bold transition-all flex items-center justify-center space-x-2">
+                        <span>Ver Capítulo</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cap 5 -->
+            <div class="p-4 md:p-5 rounded-xl bg-radio-panel border border-radio-border hover:border-radio-border/80 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-2 flex-1">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 text-xs font-mono font-bold">CAP 5</span>
+                        <h3 class="text-base font-bold text-white">Voces Digitales (DMR, TETRA & P25)</h3>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Incursión en los estándares de transmisión digital comercial e industrial. Modulaciones 4FSK/DQPSK, Time Slots, Color Codes y uso de decodificadores (DSD+ / plugins SDR++) para canalizar audio claro.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-500 pt-1">
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">DMR / TETRA</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">Time Slots</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">Plugin DSD</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="loadChapter('cap5')" class="w-full md:w-auto px-4 py-2 rounded-lg bg-radio-dark border border-radio-border text-slate-300 hover:text-white hover:border-slate-500 text-xs font-bold transition-all flex items-center justify-center space-x-2">
+                        <span>Ver Capítulo</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MÓDULO 3 -->
+    <div class="space-y-4 pt-4">
+        <div class="flex items-center space-x-3 text-amber-400 font-mono text-sm font-bold border-l-2 border-amber-400 pl-3">
+            <i class="fa-solid fa-globe"></i>
+            <span>MÓDULO 3: ONDA CORTA HF (3 - 30 MHz)</span>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4">
+            <!-- Cap 6 -->
+            <div class="p-4 md:p-5 rounded-xl bg-radio-panel border border-radio-border hover:border-radio-border/80 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-2 flex-1">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 text-xs font-mono font-bold">CAP 6</span>
+                        <h3 class="text-base font-bold text-white">Propagación HF y Modos SSB</h3>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Cómo la ionosfera rebota señales a miles de kilómetros (capas D, E, F1, F2). Recepción en Banda Lateral Única (USB/LSB), antenas de hilo largo (Longwire) y baluns 9:1 Unun.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-500 pt-1">
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">3 - 30 MHz</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">USB / LSB</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">Ionosfera</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="loadChapter('cap6')" class="w-full md:w-auto px-4 py-2 rounded-lg bg-radio-dark border border-radio-border text-slate-300 hover:text-white hover:border-slate-500 text-xs font-bold transition-all flex items-center justify-center space-x-2">
+                        <span>Ver Capítulo</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cap 7 -->
+            <div class="p-4 md:p-5 rounded-xl bg-radio-panel border border-radio-border hover:border-radio-border/80 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-2 flex-1">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 text-xs font-mono font-bold">CAP 7</span>
+                        <h3 class="text-base font-bold text-white">Emisoras de Números y Señales Espía</h3>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Rastreo de míticas emisoras de números gubernamentales (HM01, UVB-76 "The Buzzer", V07). Frecuencias activas, horarios, transmisiones de voz sintética cifrada y análisis espectral.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-500 pt-1">
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">UVB-76</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">HM01 / V07</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">Espionaje RF</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="loadChapter('cap7')" class="w-full md:w-auto px-4 py-2 rounded-lg bg-radio-dark border border-radio-border text-slate-300 hover:text-white hover:border-slate-500 text-xs font-bold transition-all flex items-center justify-center space-x-2">
+                        <span>Ver Capítulo</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cap 8 -->
+            <div class="p-4 md:p-5 rounded-xl bg-radio-panel border border-radio-border hover:border-radio-border/80 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-2 flex-1">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 text-xs font-mono font-bold">CAP 8</span>
+                        <h3 class="text-base font-bold text-white">WEFAX, Mapas del Tiempo y RTTY</h3>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Decodificación de facsímil meteorológico marino (WEFAX) enviado en alta mar directamente desde estaciones costeras (Offenbach, Boston) y textos informativos Radioteletipo (RTTY/NAVTEX).
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-500 pt-1">
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">WEFAX 120 RPM</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">RTTY / FSK</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">FLdigi Decoder</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="loadChapter('cap8')" class="w-full md:w-auto px-4 py-2 rounded-lg bg-radio-dark border border-radio-border text-slate-300 hover:text-white hover:border-slate-500 text-xs font-bold transition-all flex items-center justify-center space-x-2">
+                        <span>Ver Capítulo</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MÓDULO 4 -->
+    <div class="space-y-4 pt-4">
+        <div class="flex items-center space-x-3 text-purple-400 font-mono text-sm font-bold border-l-2 border-purple-400 pl-3">
+            <i class="fa-solid fa-satellite"></i>
+            <span>MÓDULO 4: SATÉLITES Y ESPACIO</span>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4">
+            <!-- Cap 9 -->
+            <div class="p-4 md:p-5 rounded-xl bg-radio-panel border border-radio-border hover:border-radio-border/80 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-2 flex-1">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 text-xs font-mono font-bold">CAP 9</span>
+                        <h3 class="text-base font-bold text-white">Satélites NOAA e Imágenes APT</h3>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Captura directa de imágenes térmicas y visibles de la Tierra emitidas por satélites NOAA-15/18/19 a 137 MHz. Corrección de Efecto Doppler, antenas V-Dipole/QFH y software de predicción (Gpredict/SatDump).
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-500 pt-1">
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">137.1 - 137.9 MHz</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">APT Telemetry</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">SatDump / WXtoImg</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="loadChapter('cap9')" class="w-full md:w-auto px-4 py-2 rounded-lg bg-radio-dark border border-radio-border text-slate-300 hover:text-white hover:border-slate-500 text-xs font-bold transition-all flex items-center justify-center space-x-2">
+                        <span>Ver Capítulo</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cap 10 -->
+            <div class="p-4 md:p-5 rounded-xl bg-radio-panel border border-radio-border hover:border-radio-border/80 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-2 flex-1">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 text-xs font-mono font-bold">CAP 10</span>
+                        <h3 class="text-base font-bold text-white">Rastreando ADS-B (Radar de Aviones a 1090 MHz)</h3>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Montaje de una estación radar propia. Decodificación de transpondedores comerciales Mode S/ADS-B en 1090 MHz para ver posición GPS, rumbo, altitud y matrícula en mapas interactivos con Dump1090 y Readsb.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-500 pt-1">
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">1090 MHz</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">ADS-B Mode S</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">Dump1090 Radar</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="loadChapter('cap10')" class="w-full md:w-auto px-4 py-2 rounded-lg bg-radio-dark border border-radio-border text-slate-300 hover:text-white hover:border-slate-500 text-xs font-bold transition-all flex items-center justify-center space-x-2">
+                        <span>Ver Capítulo</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cap 11 -->
+            <div class="p-4 md:p-5 rounded-xl bg-radio-panel border border-radio-border hover:border-radio-border/80 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-2 flex-1">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 text-xs font-mono font-bold">CAP 11</span>
+                        <h3 class="text-base font-bold text-white">Radioastronomía Aficionada (Línea de Hidrógeno)</h3>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Observación del espacio profundo capturando la emisión neutra de hidrógeno atómico galáctico a 1420.405 MHz. Integración de preamplificadores LNA, filtros de cavidad y mapas de la Vía Láctea.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-500 pt-1">
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">1420.405 MHz</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">HI Line 21cm</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">LNA & Grid Antenna</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="loadChapter('cap11')" class="w-full md:w-auto px-4 py-2 rounded-lg bg-radio-dark border border-radio-border text-slate-300 hover:text-white hover:border-slate-500 text-xs font-bold transition-all flex items-center justify-center space-x-2">
+                        <span>Ver Capítulo</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MÓDULO 5 -->
+    <div class="space-y-4 pt-4">
+        <div class="flex items-center space-x-3 text-rose-400 font-mono text-sm font-bold border-l-2 border-rose-400 pl-3">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>MÓDULO 5: AUDITORÍA & ESTACIÓN DE CACERÍA</span>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4">
+            <!-- Cap 12 -->
+            <div class="p-4 md:p-5 rounded-xl bg-radio-panel border border-radio-border hover:border-radio-border/80 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-2 flex-1">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 text-xs font-mono font-bold">CAP 12</span>
+                        <h3 class="text-base font-bold text-white">Auditoría de Radiofrecuencia y Seguridad RF</h3>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Análisis de seguridad e inspección de señales en bandas ISM (433 MHz / 868 MHz). Decodificación de mandos a distancia, sensores de presión de neumáticos (TPMS) y termómetros, con enfoque ético y legal.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-500 pt-1">
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">433 / 868 MHz</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">ASK / FSK / OOK</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">Rtl_433 & Hacking Ético</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="loadChapter('cap12')" class="w-full md:w-auto px-4 py-2 rounded-lg bg-radio-dark border border-radio-border text-slate-300 hover:text-white hover:border-slate-500 text-xs font-bold transition-all flex items-center justify-center space-x-2">
+                        <span>Ver Capítulo</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cap 13 -->
+            <div class="p-4 md:p-5 rounded-xl bg-radio-panel border border-radio-border hover:border-radio-border/80 transition-all flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div class="space-y-2 flex-1">
+                    <div class="flex items-center space-x-3">
+                        <span class="px-2.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 text-xs font-mono font-bold">CAP 13</span>
+                        <h3 class="text-base font-bold text-white">La Estación Definitiva de Cacería SDR</h3>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Construcción paso a paso del laboratorio de escucha ideal. Conmutadores de antena, filtros rechazadores de banda (FM Notch Filter), Bias-T, protecciones contra descargas estáticas y automatización con Python.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-[10px] font-mono text-slate-500 pt-1">
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">FM Notch & Bias-T</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">Antenna Switch</span>
+                        <span class="bg-radio-dark px-2 py-0.5 rounded border border-radio-border">Scripting Python</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <button onclick="loadChapter('cap13')" class="w-full md:w-auto px-4 py-2 rounded-lg bg-radio-dark border border-radio-border text-slate-300 hover:text-white hover:border-slate-500 text-xs font-bold transition-all flex items-center justify-center space-x-2">
+                        <span>Ver Capítulo</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

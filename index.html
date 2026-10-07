@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full bg-radio-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Cazadores del Espectro - Manual de SDR</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'radio-dark': '#0a0f0d',
+                        'radio-panel': '#121a16',
+                        'radio-border': '#1f2d26',
+                        'radio-accent': '#00ff88',
+                        'radio-cyan': '#00e5ff',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- KaTeX Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+
+    <!-- Marked JS Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-full text-slate-200 font-sans antialiased bg-radio-dark bg-tactical-grid relative overflow-x-hidden selection:bg-radio-accent selection:text-radio-dark">
+
+    <!-- Background Canvas for Ambient Cyber Grid Animation -->
+    <canvas id="bgCanvas" class="fixed inset-0 pointer-events-none z-0 opacity-40"></canvas>
+    
+    <!-- Scanline Subtle Overlay -->
+    <div class="fixed inset-0 pointer-events-none z-0 scanline-overlay opacity-30"></div>
+
+    <div class="relative z-10 flex h-full overflow-hidden">
+
+        <!-- Mobile Header Bar -->
+        <div class="md:hidden fixed top-0 left-0 right-0 h-14 bg-radio-panel/95 backdrop-blur border-b border-radio-border z-40 flex items-center justify-between px-4">
+            <div class="flex items-center space-x-3">
+                <button id="toggleMenuBtn" class="text-radio-accent p-2 rounded-lg bg-radio-dark border border-radio-border">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+                <div class="font-extrabold text-sm text-white tracking-tight flex items-center space-x-2">
+                    <i class="fa-solid fa-satellite-dish text-radio-accent"></i>
+                    <span>CAZADORES DEL ESPECTRO</span>
+                </div>
+            </div>
+            <button onclick="loadChapter('index')" class="p-2 text-radio-cyan text-sm">
+                <i class="fa-solid fa-list-ol"></i>
+            </button>
+        </div>
+
+        <!-- Sidebar Navigation Bar -->
+    <aside id="sidebar" class="fixed inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition-transform duration-300 ease-in-out w-80 bg-radio-panel border-r border-radio-border flex flex-col z-40 h-screen shrink-0">
+        
+        <!-- Sidebar Brand Header -->
+        <div class="p-5 border-b border-radio-border flex flex-col space-y-2 relative overflow-hidden">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-radio-dark border border-radio-accent/40 flex items-center justify-center glow-green shrink-0">
+                    <i class="fa-solid fa-satellite-dish text-radio-accent text-lg"></i>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-white text-base tracking-wide text-glow leading-tight">CAZADORES DEL ESPECTRO</h1>
+                    <p class="text-xs text-radio-accent font-mono">EDICIÓN DIGITAL WEB</p>
+                </div>
+            </div>
+            <p class="text-xs text-slate-400 mt-1">Manual de SDR para explorar el océano invisible de las ondas</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="p-3 border-b border-radio-border bg-radio-dark/50">
+            <div class="relative">
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-slate-500 text-xs"></i>
+                <input type="text" id="searchInput" placeholder="Buscar concepto o canal..." class="w-full bg-radio-panel border border-radio-border rounded-lg pl-8 pr-3 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-radio-accent transition-colors font-mono">
+            </div>
+        </div>
+
+        <!-- Navigation Menu Links -->
+        <nav class="flex-1 overflow-y-auto p-3 space-y-4" id="navMenu">
+            
+            <!-- Home & Index Section -->
+            <div>
+                <span class="text-[10px] font-mono font-bold text-slate-500 uppercase tracking-wider px-2 block mb-1">GENERAL</span>
+                <button onclick="loadChapter('home')" class="nav-btn w-full text-left px-3 py-2 rounded-lg text-xs font-semibold flex items-center space-x-2 text-radio-accent hover:bg-radio-border/50 transition-all active-nav" data-id="home">
+                    <i class="fa-solid fa-house w-4"></i>
+                    <span>Portada e Inicio</span>
+                </button>
+                <button onclick="loadChapter('index')" class="nav-btn w-full text-left px-3 py-2 rounded-lg text-xs font-semibold flex items-center space-x-2 text-slate-300 hover:bg-radio-border/50 transition-all mt-1" data-id="index">
+                    <i class="fa-solid fa-list-ol w-4 text-radio-cyan"></i>
+                    <span>Índice del Libro</span>
+                </button>
+            </div>
+
+            <!-- MÓDULO 0 -->
+            <div>
+                <span class="text-[10px] font-mono font-bold text-radio-accent uppercase tracking-wider px-2 block mb-1">MÓDULO 0: LA BIENVENIDA</span>
+                <button onclick="loadChapter('cap0')" class="nav-btn w-full text-left px-3 py-2 rounded-lg text-xs flex items-center space-x-2 text-slate-300 hover:bg-radio-border/50 transition-all" data-id="cap0">
+                    <span class="w-2 h-2 rounded-full bg-radio-accent inline-block shrink-0"></span>
+                    <span class="truncate">Capítulo 0: El mapa del tesoro invisible</span>
+                </button>
+            </div>
+
+            <!-- MÓDULO 1 -->
+            <div>
+                <span class="text-[10px] font-mono font-bold text-radio-cyan uppercase tracking-wider px-2 block mb-1">MÓDULO 1: SEÑALES LOCALES (VHF/UHF)</span>
+                <button onclick="loadChapter('cap1')" class="nav-btn w-full text-left px-3 py-2 rounded-lg text-xs flex items-center space-x-2 text-slate-300 hover:bg-radio-border/50 transition-all" data-id="cap1">
+                    <span class="w-2 h-2 rounded-full bg-radio-cyan inline-block shrink-0"></span>
+                    <span class="truncate">Cap. 1: PMR446 y Subtonos</span>
+                </button>
+                <button onclick="loadChapter('cap2')" class="nav-btn w-full text-left px-3 py-2 rounded-lg text-xs flex items-center space-x-2 text-slate-300 hover:bg-radio-border/50 transition-all mt-1" data-id="cap2">
+                    <span class="w-2 h-2 rounded-full bg-radio-cyan inline-block shrink-0"></span>
+                    <span class="truncate">Cap. 2: Banda Aérea de aviación</span>
+                    <span class="ml-2 text-[10px] font-mono bg-radio-cyan/20 text-radio-cyan px-1.5 py-0.5 rounded border border-radio-cyan/30 font-bold">¡NUEVO!</span>
+                </button>
+
+                <button onclick="loadChapter('cap3')" class="w-full text-left px-3 py-1.5 text-xs text-slate-400 hover:text-slate-200 flex justify-between items-center transition-colors">
+                        <span class="truncate">Cap. 3: Repetidores VHF/UHF</span>
+                        <i class="fa-solid fa-lock text-[10px] text-slate-500"></i>
+                    </button>
+                </div>
+
+            <!-- MÓDULO 2 -->
+            <div>
+                <span class="text-[10px] font-mono font-bold text-amber-400 uppercase tracking-wider px-2 block mb-1">MÓDULO 2: ONDA CORTA (HF)</span>
+                <div class="space-y-0.5">
+                    <button onclick="loadChapter('cap4')" class="w-full text-left px-3 py-1.5 text-xs text-slate-400 hover:text-slate-200 flex justify-between items-center transition-colors">
+                        <span class="truncate">Cap. 4: Radioaficionados en HF</span>
+                        <i class="fa-solid fa-lock text-[10px] text-slate-500"></i>
+                    </button>
+                    <button onclick="loadChapter('cap5')" class="w-full text-left px-3 py-1.5 text-xs text-slate-400 hover:text-slate-200 flex justify-between items-center transition-colors">
+                        <span class="truncate">Cap. 5: Broadcasting & Piratas</span>
+                        <i class="fa-solid fa-lock text-[10px] text-slate-500"></i>
+                    </button>
+                    <button onclick="loadChapter('cap6')" class="w-full text-left px-3 py-1.5 text-xs text-slate-400 hover:text-slate-200 flex justify-between items-center transition-colors">
+                        <span class="truncate">Cap. 6: Señales meteorológicas</span>
+                        <i class="fa-solid fa-lock text-[10px] text-slate-500"></i>
+                    </button>
+                    <button onclick="loadChapter('cap7')" class="w-full text-left px-3 py-1.5 text-xs text-slate-400 hover:text-slate-200 flex justify-between items-center transition-colors">
+                        <span class="truncate">Cap. 7: Aviones sobre el océano</span>
+                        <i class="fa-solid fa-lock text-[10px] text-slate-500"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- MÓDULO 3 -->
+            <div>
+                <span class="text-[10px] font-mono font-bold text-purple-400 uppercase tracking-wider px-2 block mb-1">MÓDULO 3: MISTERIOS EN HF</span>
+                <div class="space-y-0.5">
+                    <button onclick="loadChapter('cap8')" class="w-full text-left px-3 py-1.5 text-xs text-slate-400 hover:text-slate-200 flex justify-between items-center transition-colors">
+                        <span class="truncate">Cap. 8: Criptografía y guerra fría</span>
+                        <i class="fa-solid fa-lock text-[10px] text-slate-500"></i>
+                    </button>
+                    <button onclick="loadChapter('cap9')" class="w-full text-left px-3 py-1.5 text-xs text-slate-400 hover:text-slate-200 flex justify-between items-center transition-colors">
+                        <span class="truncate">Cap. 9: Modos Digitales</span>
+                        <i class="fa-solid fa-lock text-[10px] text-slate-500"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- MÓDULO 4 -->
+            <div>
+                <span class="text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-wider px-2 block mb-1">MÓDULO 4: RASTREANDO EL CIELO Y EL MAR</span>
+                <div class="space-y-0.5">
+                    <button onclick="loadChapter('cap10')" class="w-full text-left px-3 py-1.5 text-xs text-slate-400 hover:text-slate-200 flex justify-between items-center transition-colors">
+                        <span class="truncate">Cap. 10: Radares de aviones y barcos</span>
+                        <i class="fa-solid fa-lock text-[10px] text-slate-500"></i>
+                    </button>
+                    <button onclick="loadChapter('cap11')" class="w-full text-left px-3 py-1.5 text-xs text-slate-400 hover:text-slate-200 flex justify-between items-center transition-colors">
+                        <span class="truncate">Cap. 11: Fotografía desde el espacio</span>
+                        <i class="fa-solid fa-lock text-[10px] text-slate-500"></i>
+                    </button>
+                    <button onclick="loadChapter('cap12')" class="w-full text-left px-3 py-1.5 text-xs text-slate-400 hover:text-slate-200 flex justify-between items-center transition-colors">
+                        <span class="truncate">Cap. 12: Escuchar sin antena ni SDR</span>
+                        <i class="fa-solid fa-lock text-[10px] text-slate-500"></i>
+                    </button>
+                    <button onclick="loadChapter('cap13')" class="w-full text-left px-3 py-1.5 text-xs text-slate-400 hover:text-slate-200 flex justify-between items-center transition-colors">
+                        <span class="truncate">Cap. 13: Radio digital</span>
+                        <i class="fa-solid fa-lock text-[10px] text-slate-500"></i>
+                    </button>
+                </div>
+            </div>
+
+        </nav>
+
+        <!-- Sidebar Footer Status -->
+        <div class="p-3 border-t border-radio-border bg-radio-dark text-[11px] font-mono flex items-center justify-between text-slate-400">
+            <span class="flex items-center space-x-1.5">
+                <span class="w-2 h-2 rounded-full bg-radio-accent animate-pulse"></span>
+                <span>SDR++ READY</span>
+            </span>
+            <span class="text-radio-accent">ENTREGA #2</span>
+        </div>
+    </aside>
+
+    <!-- Main Content Container -->
+    <main class="flex-1 min-h-0 md:min-h-screen relative flex flex-col bg-radio-dark overflow-y-auto">
+        
+        <!-- Animated Waterfall CSS Background Canvas -->
+        <canvas id="waterfallCanvas"></canvas>
+
+        <!-- Content Box Container -->
+        <div class="relative z-10 flex-1 max-w-4xl w-full mx-auto p-2.5 sm:p-4 md:p-8">
+            <div id="contentDisplay" class="bg-radio-panel/90 border border-radio-border rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-10 shadow-2xl backdrop-blur-md">
+                <!-- Content injected dynamically via JavaScript -->
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="relative z-10 border-t border-radio-border bg-radio-panel/60 px-4 py-3 text-xs text-slate-500 font-mono">
+            <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+                
+                <!-- Texto informativo (Izquierda) -->
+                <div class="text-center sm:text-left">
+                    <p class="text-slate-300 font-semibold">CAZADORES DEL ESPECTRO — Publicación Digital Semanal de SDR</p>
+                    <p class="text-[10px] text-slate-500 mt-0.5">Diseñado para jóvenes exploradores de las ondas electromagnéticas</p>
+                </div>
+
+                <!-- Licencia, Enlace a GitHub e Indicativo (Derecha) -->
+                <div class="flex items-center space-x-3 shrink-0">
+                    <!-- Botón / Enlace a GitHub -->
+                    <a href="https://github.com/mjimenezganan/manual-SDR" target="_blank" rel="noopener noreferrer" title="Ver código y repositorio en GitHub" class="text-slate-400 hover:text-white text-lg transition-colors flex items-center">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <!-- Insignia Creative Commons -->
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer" title="Licencia CC BY-NC-SA 4.0" class="hover:opacity-80 transition-opacity">
+                        <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="Licencia CC BY-NC-SA 4.0" class="h-6 w-auto" />
+                    </a>
+
+                    <!-- Indicativo de Autoría -->
+                    <div class="text-right text-[10px] leading-tight border-l border-radio-border pl-2.5">
+                        <span class="block text-slate-400">Creado por</span>
+                        <span class="text-radio-accent font-bold tracking-wider">EA4IHV</span>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </main>
+
+    </div>
+
+    <!-- Background matrix ambient script -->
+    <script src="bg-animation.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

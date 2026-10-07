@@ -1,4 +1,27 @@
-MIT License
+# Licencia y Atribución
+
+Este repositorio contiene dos partes diferenciadas bajo distintas licencias:
+
+## 1. Texto del Libro y Material Didáctico (`/content`, archivos `.md` e imágenes)
+Todo el contenido escrito y multimedia está protegido bajo la licencia 
+**Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)**.
+
+Usted es libre de compartir y adaptar el material siempre que:
+- **Atribución:** Otorgue el crédito adecuado indicando el autor original, el indicativo de radioaficionado y el enlace al repositorio o web oficial.
+- **No Comercial:** No utilice el material con fines comerciales.
+
+### Formato de Atribución Obligatorio:
+> "Cazadores del Espectro" © 2026 por Miguel Jiménez Gañán (EA4IHV).
+> Publicación original: [https://github.com/tu-usuario/tu-repositorio](https://github.com/tu-usuario/tu-repositorio)
+> Disponible en: [https://micasa.com.es/sdr](https://micasa.com.es/sdr)
+
+---
+
+## 2. Código Fuente (`index.html`, `style.css`, `app.js`, etc.)
+El código de la aplicación web se distribuye bajo la **Licencia MIT**. 
+Consulte el texto completo de la licencia MIT para más detalles.
+
+### MIT License
 
 Copyright (c) 2026 Miguel Jiménez
 

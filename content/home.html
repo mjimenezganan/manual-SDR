@@ -1,0 +1,85 @@
+<div class="text-center py-2 md:py-6 space-y-4 md:space-y-6">
+    <!-- Hero Radio Visual Badge -->
+    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-radio-accent/10 border border-radio-accent/30 text-radio-accent text-xs font-mono mb-1">
+        <i class="fa-solid fa-signal animate-pulse"></i>
+        <span>GUÍA PRÁCTICA Y MANUAL INTERACTIVO DE SDR</span>
+    </div>
+
+    <!-- Main Title & Subtitle -->
+    <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight">
+        CAZADORES DEL <span class="text-transparent bg-clip-text bg-gradient-to-r from-radio-accent via-radio-cyan to-emerald-400 text-glow">ESPECTRO</span>
+    </h1>
+    
+    <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto font-light leading-relaxed">
+        Guía práctica para navegar el océano invisible de las ondas electromagnéticas con tu receptor SDR.
+    </p>
+
+    <!-- Radio Visual Graphics Banner -->
+    <div class="my-8 relative rounded-xl border border-radio-border bg-gradient-to-b from-radio-dark to-radio-panel p-6 overflow-hidden">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div class="p-4 rounded-lg bg-radio-dark/60 border border-radio-border hover:border-radio-accent/50 transition-colors">
+                <i class="fa-solid fa-walkie-talkie text-2xl text-radio-accent mb-2"></i>
+                <div class="font-bold text-white text-sm">PMR446</div>
+                <div class="text-[11px] text-slate-400">Walkie-Talkies & Subtonos</div>
+            </div>
+            <div class="p-4 rounded-lg bg-radio-dark/60 border border-radio-border hover:border-radio-cyan/50 transition-colors">
+                <i class="fa-solid fa-plane-departure text-2xl text-radio-cyan mb-2"></i>
+                <div class="font-bold text-white text-sm">Banda Aérea</div>
+                <div class="text-[11px] text-slate-400">Torres de Control & AM</div>
+            </div>
+            <div class="p-4 rounded-lg bg-radio-dark/60 border border-radio-border hover:border-amber-500/50 transition-colors">
+                <i class="fa-solid fa-globe text-2xl text-amber-400 mb-2"></i>
+                <div class="font-bold text-white text-sm">Onda Corta</div>
+                <div class="text-[11px] text-slate-400">Emisoras Globales & SSB</div>
+            </div>
+            <div class="p-4 rounded-lg bg-radio-dark/60 border border-radio-border hover:border-purple-500/50 transition-colors">
+                <i class="fa-solid fa-satellite text-2xl text-purple-400 mb-2"></i>
+                <div class="font-bold text-white text-sm">Satélites</div>
+                <div class="text-[11px] text-slate-400">Imágenes NOAA & ADS-B</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Call to Action Buttons -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+        <button onclick="loadChapter('cap0')" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-radio-accent text-radio-dark font-extrabold text-sm hover:bg-emerald-300 transition-all shadow-lg glow-green flex items-center justify-center space-x-2 cursor-pointer">
+            <i class="fa-solid fa-rocket"></i>
+            <span>Comenzar Misión: Capítulo 0</span>
+        </button>
+        <button onclick="loadChapter('index')" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-radio-dark border border-radio-border text-slate-200 font-bold text-sm hover:border-radio-cyan hover:text-radio-cyan transition-all flex items-center justify-center space-x-2 cursor-pointer">
+            <i class="fa-solid fa-list-check"></i>
+            <span>Ver Índice Completo</span>
+        </button>
+    </div>
+
+    <!-- Features Overview -->
+    <div class="grid md:grid-cols-3 gap-6 text-left mt-12 pt-8 border-t border-radio-border">
+        <div class="space-y-2">
+            <div class="text-radio-accent font-mono font-bold text-sm flex items-center space-x-2">
+                <i class="fa-solid fa-microchip"></i>
+                <span>Hazlo tú mismo</span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+                Aprende a transformar un simple receptor USB de 20 € y un cable en un superreceptor de radiofrecuencias.
+            </p>
+        </div>
+        <div class="space-y-2">
+            <div class="text-radio-cyan font-mono font-bold text-sm flex items-center space-x-2">
+                <i class="fa-solid fa-sliders"></i>
+                <span>SDR++ & Software</span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+                Domina la cascada de espectro (Waterfall), filtros de audio y decodificadores digitales paso a paso.
+            </p>
+        </div>
+        <div class="space-y-2">
+            <div class="text-amber-400 font-mono font-bold text-sm flex items-center space-x-2">
+                <i class="fa-solid fa-book-bookmark"></i>
+                <span>Entregas Progresivas</span>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+                Capítulos ordenados paso a paso para realizar experimentos prácticos desde tu propia habitación.
+            </p>
+        </div>
+    </div>
+</div>
