@@ -55,16 +55,15 @@
                     <i class="fa-solid fa-circle-play text-radio-cyan mt-0.5 text-xs"></i>
                     <div>
                         <span class="font-bold underline text-white">Capítulo 2: Hablando con el cielo: La Banda Aérea de aviación</span>
-                        <span class="ml-2 text-[10px] font-mono bg-radio-cyan/20 text-radio-cyan px-1.5 py-0.5 rounded border border-radio-cyan/30 font-bold">¡NUEVO!</span>
                         <p class="text-slate-400 text-xs mt-0.5">Comunicación en AM entre torres de control y aviones (118-137 MHz), cálculo de antena dipolo y alfabeto ICAO.</p>
                     </div>
                 </li>
-                <li class="flex items-start space-x-2.5 p-1.5 text-slate-400 opacity-75">
-                    <i class="fa-solid fa-lock text-amber-400 mt-0.5 text-xs"></i>
+                <li class="flex items-start space-x-2.5 p-1.5 rounded hover:bg-radio-border/40 transition-colors cursor-pointer" onclick="loadChapter('cap3')">
+                    <i class="fa-solid fa-circle-play text-radio-cyan mt-0.5 text-xs"></i>
                     <div>
-                        <span class="font-semibold text-slate-300">Capítulo 3: Trampolines en las montañas: Repetidores de VHF y UHF</span>
-                        <!--span class="ml-2 text-[10px] font-mono bg-radio-dark px-1.5 py-0.5 rounded border border-slate-700 text-amber-400">Semana 4</span-->
-                        <p class="text-slate-500 text-xs mt-0.5">Offsets, repetidores de radioaficionados en 2m/70cm y cobertura por visión directa.</p>
+                        <span class="font-bold underline text-white">Capítulo 3: Trampolines en las montañas: Repetidores de VHF y UHF</span>
+                        <span class="ml-2 text-[10px] font-mono bg-radio-cyan/20 text-radio-cyan px-1.5 py-0.5 rounded border border-radio-cyan/30 font-bold">¡NUEVO!</span>
+                        <p class="text-slate-400 text-xs mt-0.5">Offsets, subtonos CTCSS, indicativos y distritos españoles, repetidores de 2m/70cm y captura simultánea en cascada.</p>
                     </div>
                 </li>
             </ul>
@@ -79,11 +78,23 @@
                 </div>
                 <span class="text-[10px] font-mono bg-slate-800 text-slate-400 px-2 py-0.5 rounded border border-slate-700">PRÓXIMAMENTE</span>
             </div>
-            <ul class="text-xs md:text-sm space-y-2 text-slate-400">
-                <li class="p-1">Capítulo 4: Los exploradores globales: Radioaficionados en HF y modos SSB / CW</li>
-                <li class="p-1">Capítulo 5: Voces sin frontera: Broadcasting internacional, emisoras piratas y "Outbanders"</li>
-                <li class="p-1">Capítulo 6: Señales meteorológicas: VOLMET, Fax Meteorológico (WEFAX) y boletines marinos</li>
-                <li class="p-1">Capítulo 7: Aviones sobre el océano (Comunicaciones MWARA)</li>
+            <ul class="text-xs md:text-sm space-y-2 text-slate-200">
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 4: Los exploradores globales: Radioaficionados en HF y modos SSB / CW</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Propagación ionosférica, bandas de HF, ajuste de LSB/USB y decodificación manual o por software del código Morse.</p>
+                </li>
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 5: Voces sin frontera: Broadcasting internacional, emisoras piratas y "Outbanders"</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Sintonización de radios internacionales en AM, emisiones culturales lejanas y transmisiones no oficiales fuera de banda.</p>
+                </li>
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 6: Señales meteorológicas: VOLMET, Fax Meteorológico (WEFAX) y boletines marinos</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Boletines de voz para aviación, partes del mar en alta mar y recepción de mapas del tiempo visuales en HF Fax.</p>
+                </li>
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 7: Aviones sobre el océano (Comunicaciones MWARA)</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Seguimiento de aeronaves transoceánicas fuera de la cobertura VHF mediante frecuencias HF de larga distancia en aviación.</p>
+                </li>
             </ul>
         </div>
 
@@ -96,9 +107,15 @@
                 </div>
                 <span class="text-[10px] font-mono bg-slate-800 text-slate-400 px-2 py-0.5 rounded border border-slate-700">PRÓXIMAMENTE</span>
             </div>
-            <ul class="text-xs md:text-sm space-y-2 text-slate-400">
-                <li class="p-1">Capítulo 8: Criptografía y guerra fría: Estaciones de Números y redes militares (HFGCS)</li>
-                <li class="p-1">Capítulo 9: Datos en las olas: Modos Digitales de Radioaficionado (FT8, RTTY y PSK)</li>
+            <ul class="text-xs md:text-sm space-y-2 text-slate-200">
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 8: Criptografía y guerra fría: Estaciones de Números y redes militares (HFGCS)</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Emisiones secretas del espionaje internacional, transmisiones en bucle de secuencias numéricas y redes estratégicas de defensa.</p>
+                </li>
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 9: Datos en las olas: Modos Digitales de Radioaficionado (FT8, RTTY y PSK)</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Captura e interpretación de textos y datos binarios en la cascada usando programas decodificadores como WSJT-X y FLdigi.</p>
+                </li>
             </ul>
         </div>
 
@@ -111,11 +128,23 @@
                 </div>
                 <span class="text-[10px] font-mono bg-slate-800 text-slate-400 px-2 py-0.5 rounded border border-slate-700">PRÓXIMAMENTE</span>
             </div>
-            <ul class="text-xs md:text-sm space-y-2 text-slate-400">
-                <li class="p-1">Capítulo 10: Radares de aviones y barcos (Transpondedores ADS-B y Sistema AIS en 162 MHz)</li>
-                <li class="p-1">Capítulo 11: Fotografía desde el espacio (Satélites NOAA/Meteor e imágenes SSTV de la ISS)</li>
-                <li class="p-1">Capítulo 12: Escuchar sin antena ni SDR — La red WebSDR</li>
-                <li class="p-1">Capítulo 13: Radio digital (Emisiones broadcast en DRM y DAB+)</li>
+            <ul class="text-xs md:text-sm space-y-2 text-slate-200">
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 10: Radares de aviones y barcos (Transpondedores ADS-B y Sistema AIS en 162 MHz)</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Decodificación de paquetes de posición para posicionar aviones en 1090 MHz y buques en rutas marítimas sobre un mapa en vivo.</p>
+                </li>
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 11: Fotografía desde el espacio (Satélites NOAA/Meteor e imágenes SSTV de la ISS)</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Seguimiento de órbitas polares, recepción de fotografías meteorológicas directamente del espacio y diploma SSTV desde la Estación Espacial.</p>
+                </li>
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 12: Escuchar sin antena ni SDR — La red WebSDR</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Uso de receptores remotos conectados a Internet en todo el planeta para analizar espectros lejanos desde cualquier navegador.</p>
+                </li>
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 13: Radio digital (Emisiones broadcast en DRM y DAB+)</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Nuevos formatos de transmisión de audio digital, multiplexación de datos y sintonización de estaciones digitales terrestres.</p>
+                </li>
             </ul>
         </div>
     </div>
