@@ -225,7 +225,7 @@ Los operadores de telegrafía experimentados no ven "puntos y rayas"; **escuchan
 | **I** | `..` | di-dit | **V** | `...-` | di-di-di-DÁ |
 | **J** | `.---` | di-DÁ-DÁ-DÁ | **W** | `.--` | di-DÁ-DÁ |
 | **K** | `-.-` | DÁ-di-DÁ | **X** | `-..-` | DÁ-di-di-DÁ |
-| **L** | `.-..` | di-DÁ-di-dit | **Y** | amplio | DÁ-di-DÁ-DÁ |
+| **L** | `.-..` | di-DÁ-di-dit | **Y** | `-.--` | DÁ-di-DÁ-DÁ |
 | **M** | `--` | DÁ-DÁ | **Z** | `--..` | DÁ-DÁ-di-dit |
 
 ### 6. Estructura de los Planes de Banda en HF
@@ -289,7 +289,7 @@ Cuando escuches QSO (conversaciones) en HF, los radioaficionados emplean un cód
 * **QRZ?:** "¿Quién me llama?" (o consulta de indicativos).
 
 
-### 6. Práctica con SDR++: Caza de Emisiones y Cacería Internacional
+### 7. Práctica con SDR++: Caza de Emisiones y Cacería Internacional
 
 Ha llegado el momento de encender tu receptor SDR, conectar una antena extendida (idealmente un cable largo o dipolo desplegado) y explorar la jungla electromagnética de la Onda Corta.
 
@@ -385,7 +385,7 @@ A diferencia del VHF local donde la inmensa mayoría de las estaciones captadas 
 
 ¡Descubrirás al instante el nombre del operador, su fotografía, la ciudad exacta desde la que te llega la señal y los detalles de las antenas que está utilizando en ese mismo momento!
 
-### 7. Práctica Avanzada: Caza y Decodificación de Telegrafía (CW)
+### 8. Práctica Avanzada: Caza y Decodificación de Telegrafía (CW)
 
 Una vez dominada la sintonización de fonía en SSB, el siguiente reto del radioescucha en HF es interceptar y decodificar señales en Código Morse. La telegrafía sigue siendo muy activa en los primeros kilohertzios de cada banda (por ejemplo, entre $7{,}000\text{ MHz}$ y $7{,}040\text{ MHz}$ en la banda de 40 metros).
 

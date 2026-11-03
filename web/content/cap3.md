@@ -145,7 +145,7 @@ Aquí tienes tres datos reales de repetidores clave en el centro de España para
 
    * **VHF:** Salida: $145{,}725\text{ MHz}$ (`RV58` - R5) | Offset: $-600\text{ kHz}$
 
-   * **UHF:** Salida: $438{,}698\text{ MHz}$ aprox. / Canal `RU698` (R73) | Offset: $-7{,}6\text{ MHz}$
+   * **UHF:** Salida: $438{,}725\text{ MHz}$ (`RU698` - R73) | Offset: $-7{,}6\text{ MHz}$
 
 3. **Repetidor Elevado (`ED4YAN`):**
 

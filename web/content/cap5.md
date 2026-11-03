@@ -20,13 +20,13 @@ La radiodifusión en amplitud se reparte en tres zonas del espectro. Dos de ella
 
 > **Nomenclatura de Canales:** la UIT divide el mundo en tres regiones. La Región 1 cubre Europa, África, Oriente Medio y el norte de Asia. La Región 2 cubre América.
 
-> **¡Atención con tu receptor!** El RTL-SDR V4 cubre de $500\text{ kHz}$ a $1766\text{ MHz}$. Eso significa que **no recibe las ondas largas**. Antes de buscarlas, revisa qué frecuencias cubre tu propio receptor.
+> **¡Atención con tu receptor!** El RTL-SDR V4 cubre de $500\text{ kHz}$ a $1766\text{ MHz}$. Eso significa que **no recibe onda larga**. Antes de buscarla, revisa qué frecuencias cubre tu propio receptor.
 
-#### Ondas largas y medias: cada vez menos emisoras
+#### Onda larga y onda media: cada vez menos emisoras
 
-Las ondas largas tienen pocas emisoras. Según Wikipedia, las causas son la poca audiencia, la falta de receptores de consumo que la incluyan, las interferencias y el alto coste energético de la emisión. Quedan muy pocas emisoras en LW, en países como Rumanía, Polonia, Argelia y Mongolia.
+La onda larga tiene pocas emisoras. Según Wikipedia, las causas son la poca audiencia, la falta de receptores de consumo que la incluyan, las interferencias y el alto coste energético de la emisión. Quedan muy pocas emisoras en LW, en países como Rumanía, Polonia, Argelia y Mongolia.
 
-Las ondas medias siguen más vivas, sobre todo de noche. En el último apartado de este capítulo veremos el caso de España.
+La onda media sigue más vivas, sobre todo de noche. En el último apartado de este capítulo veremos el caso de España.
 
 #### Tabla de bandas de radiodifusión en onda corta
 
@@ -35,8 +35,6 @@ Cada banda de onda corta recibe su nombre según su longitud de onda aproximada.
 $$
 \lambda = \frac{c}{f} = \frac{300}{6} = 50\text{ m}
 $$
-
-<!-- Pendiente: tabla tomada del borrador de brainstorming, rangos aproximados. Verificar con la tabla de la UIT (WRC-97) antes de publicar. -->
 
 | Banda | Rango aproximado |
 | :---: | :---: |
@@ -226,7 +224,7 @@ Las frecuencias pueden cambiar. Compruébalas en [mwlist.org](https://www.mwlist
 #### Instrucciones en SDR++
 
 1. Usa la misma antena de hilo largo que en la Misión Práctica 1.
-2. Espera a que anochezca. Las ondas medias llegan mucho más lejos de noche.
+2. Espera a que anochezca. La onda media llega mucho más lejos de noche.
 3. Pon el modo en **AM** y el ancho de banda del filtro en $10\text{ kHz}$.
 4. Centra la vista en $700\text{ kHz}$ para ver a la vez las emisoras de $531$, $549$ y $891\text{ kHz}$.
 5. Haz clic sobre cada pico de la cascada y anota si se oye y con qué calidad.
@@ -274,7 +272,7 @@ Tu misión consiste en comprobar cómo el filtro del receptor afecta al canal ve
 * La programación de onda corta suele repetirse cada semana, y los cambios de emisora suelen producirse en punto o 3 minutos antes.
 * En onda media, sobre todo de noche, el **fading** hace que la señal suba y baje.
 * Las **outbanders** emiten fuera de su banda. EiBi y Shortwave.Live ayudan a localizarlas.
-* Las **ondas largas** tienen muy pocas emisoras y el RTL-SDR V4 no las recibe. Revisa las capacidades de tu receptor.
+* La **onda larga** tiene muy pocas emisoras y el RTL-SDR V4 no las recibe. Revisa las capacidades de tu receptor.
 * En diciembre de 2025, **RNE** dio de baja todas sus transmisiones de onda media. Otras cadenas, como **COPE**, también han cerrado estaciones, pero **Cope Madrid** (999 kHz) y **Onda Cero** (954 kHz) siguen audibles.
 
 ¡La caza de voces lejanas acaba de empezar!

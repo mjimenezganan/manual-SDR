@@ -216,10 +216,10 @@ Fuente: `web/content/cap0.md` a `web/content/cap4.md`. Resumen fiel de lo que me
 
 ## Observaciones y pendientes (detectados al resumir)
 
-* Cap. 2: sección 8 "Actividad Práctica: Sintonizar la Torre y decodificar el Alfabeto" está vacía. La tabla de bitácora tiene filas vacías.
-* Cap. 2: el título de la sección 9 incluye emojis (🕵️‍♂️✈️). No se usan en el resto de capítulos.
-* Cap. 3: la tabla de 2 m contiene "145,600 – 145,7875 MHz" (cuatro decimales, posible errata). La frecuencia de "Toledo capital" en UHF está marcada como aproximada ("438,698 aprox.").
-* Cap. 3: la tabla de bitácora tiene filas vacías.
-* Cap. 4: hay dos secciones numeradas "6." (planes de banda y práctica SDR++). Tabla Morse: la letra Y tiene "amplio" en lugar de ritmo auditivo.
-* Cap. 4: la sección "Anatomía de los modos SSB" menciona "Módulos 0 y 1" para AM y FM. La AM se trata en el Cap. 2 y la FM en los Caps. 1 y 3.
-* Cap. 1: la afirmación de que la norma se amplió a 16 canales en 2018 no está verificada en el texto.
+* Cap. 2: sección 8 "Actividad Práctica: Sintonizar la Torre y decodificar el Alfabeto" está vacía. La tabla de bitácora tiene filas vacías. - Permitido, son para que lo rellene el lector
+* Cap. 2: el título de la sección 9 incluye emojis (🕵️‍♂️✈️). No se usan en el resto de capítulos. - Quitar
+* Cap. 3: la tabla de 2 m contiene "145,600 – 145,7875 MHz" (cuatro decimales, posible errata). La frecuencia de "Toledo capital" en UHF está marcada como aproximada ("438,698 aprox."). - Solucionado
+* Cap. 3: la tabla de bitácora tiene filas vacías. - Permitido, son para que lo rellene el lector
+* Cap. 4: hay dos secciones numeradas "6." (planes de banda y práctica SDR++). Tabla Morse: la letra Y tiene "amplio" en lugar de ritmo auditivo. - Solucionado
+* Cap. 4: la sección "Anatomía de los modos SSB" menciona "Módulos 0 y 1" para AM y FM. La AM se trata en el Cap. 2 y la FM en los Caps. 1 y 3. - Es correcto cómo está, no cambiar nada
+* Cap. 1: la afirmación de que la norma se amplió a 16 canales en 2018 no está verificada en el texto. - No hace falta cambiar nada
