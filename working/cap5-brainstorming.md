@@ -95,7 +95,7 @@ Nota: tabla mantenida tal como está, por decisión del autor. Algunos países n
     - Receptor: un filtro más estrecho reduce la interferencia del vecino, a costa de menos calidad de audio.
     - Audio: limitar el ancho de banda del audio reduce el solapamiento.
   - Comparación: en MW, con canales de 9 kHz y audio de 4,5 kHz, las bandas laterales de canales contiguos llegan justo a tocarse (deducción a partir de las cifras anteriores).
-  - Estado de verificación: la separación de 5 kHz y la relación de ancho AM = 2 × audio están verificadas (Wikipedia). El valor de 4,5 kHz y el método de coordinación exacto no están verificados con fuente oficial (ver sección 10).
+  - Estado de verificación: la separación de 5 kHz y la relación de ancho AM = 2 × audio están verificadas (Wikipedia). El valor de 4,5 kHz lo confirma el autor. El borrador ya no describe un método de coordinación concreto: las emisoras planifican sus frecuencias por separado y el receptor puede filtrar.
 - **Comparación con MW:** canales de 9 kHz (Región 1) o 10 kHz (Región 2).
 
 ---
@@ -186,10 +186,9 @@ Propuesta de actividad: que el lector busque un canal en EiBi o Shortwave.Live q
 
 ## 10. Pendiente de verificar antes de escribir
 
-- [ ] Cifra de 4,5 kHz de ancho de audio en AM de SW y método de coordinación entre canales vecinos (sección 3): confirmar con fuente oficial (reglamento de la UIT o planes de coordinación HF).
 - [ ] Estado actual de las emisoras de COPE en OM (sección 2): confirmar antes de publicar.
 
-Resueltos: frecuencias de Argelia (mantenidas), CRI en español (confirmado), tabla de bandas de SW (mantenida), estado de la MW en España (verificado), cobertura del RTL-SDR V4 (500 kHz a 1766 MHz, dato del autor; sección 8, punto 10).
+Resueltos: frecuencias de Argelia (mantenidas), CRI en español (confirmado), tabla de bandas de SW (mantenida), estado de la MW en España (verificado), cobertura del RTL-SDR V4 (500 kHz a 1766 MHz, dato del autor; sección 8, punto 10), cifra de 4,5 kHz de audio en AM (confirmada por el autor).
 
 ---
 
@@ -199,3 +198,14 @@ Resueltos: frecuencias de Argelia (mantenidas), CRI en español (confirmado), ta
 2. Resuelta: piratas y clandestinas en un apartado breve (sección 7).
 3. Resuelta: Argelia como ejercicio principal, con todas las frecuencias candidatas y búsqueda nocturna.
 4. Resuelta: la visualización del espectro AM es más simple que en el capítulo 4.
+
+---
+
+## 12. Construcción de una antena (propuesta)
+
+- **Propuesta:** añadir un apartado sobre cómo construir una antena sencilla para SW y MW, como complemento a la escucha.
+- **Antena de hilo largo:** de 5 a 20 metros, colgada por la ventana o sobre el tejado, lo más alejada posible de la estructura del edificio. Ya aparece en las instrucciones de escucha de las misiones del capítulo.
+- **Balun 1:9:** transformador de impedancia recomendado para la antena de hilo largo. Se usa como opción preferente, no como requisito.
+- **Antena de ferrita para MW** (sección 8, punto 10): alternativa compacta, pensada para la onda media.
+- **Seguridad:** antes de montar en el tejado o junto a una ventana, comprobar que no haya líneas eléctricas cerca y evitar trabajar en altura sin protección.
+- **Actividad propuesta:** comparar la recepción de la misma emisora con el hilo largo y con la antena que trae el receptor.

@@ -1,7 +1,6 @@
 <!--
 BORRADOR DEL CAPÍTULO 5. No publicar en web/ sin indicación explícita.
 Pendientes antes de publicar (ver working/cap5-brainstorming.md, sección 10 y notas en línea):
-- Ancho de audio de 4,5 kHz en AM de onda corta y método de coordinación: confirmar con fuente oficial.
 - Datos de las emisoras de Argelia (potencias y nombres): comprobar, son de consultas antiguas.
 - Estado actual de las emisoras de COPE en OM: confirmar.
 -->
@@ -20,8 +19,8 @@ En este capítulo aprenderás a localizar estas voces, a entender por qué cambi
 
 La radiodifusión en amplitud se reparte en tres zonas del espectro. Dos de ellas tienen hoy poco peso en este capítulo; la tercera es la protagonista.
 
-* **Ondas largas (LW):** de $148{,}5$ a $283{,}5\text{ kHz}$ en la Región 1. Son las frecuencias más bajas de la radiodifusión.
-* **Ondas medias (MW):** de $531$ a $1.602\text{ kHz}$ en Europa, con canales de $9\text{ kHz}$. En América (Región 2) los canales son de $10\text{ kHz}$.
+* **Onda larga (LW):** de $148{,}5$ a $283{,}5\text{ kHz}$ en la Región 1. Son las frecuencias más bajas de la radiodifusión.
+* **Onda media (MW):** de $531$ a $1.602\text{ kHz}$ en Europa, con canales de $9\text{ kHz}$. En América (Región 2) los canales son de $10\text{ kHz}$.
 * **Onda corta (SW):** de $3$ a $30\text{ MHz}$. Es la banda donde las emisoras internacionales llegan a otros continentes.
 
 > **Nomenclatura de Canales:** la UIT divide el mundo en tres regiones. La Región 1 cubre Europa, África, Oriente Medio y el norte de Asia. La Región 2 cubre América.
@@ -75,9 +74,9 @@ La mayoría de emisoras internacionales de onda corta usan **AM** con **separaci
     │        ▄█████▄        │       ▄█████▄
     │      ▄█████████▄      │     ▄█████████▄
     └──────────────────────────────────────────► Frecuencia
-          Banda lateral        ▲         Banda lateral
-            inferior           │           superior
-                          Portadora
+          Banda lateral     ▲         Banda lateral
+            inferior        │           superior
+                        Portadora
 ```
 
 > **¿Cómo interpretar este mapa?** En el centro está la **portadora**, una línea fija que no lleva voz. A cada lado aparece una **banda lateral** que contiene la voz. Ambas bandas son copias de la misma información, y por eso la emisión ocupa una zona alrededor de la portadora.
@@ -90,27 +89,15 @@ $$
 B_{\text{AM}} = 2 \times B_{\text{audio}}
 $$
 
-<!-- Pendiente: la cifra de 4,5 kHz de audio y el método de coordinación no están verificados con fuente oficial. Confirmar antes de publicar. -->
-
 Si el audio de una emisora llega a $4{,}5\text{ kHz}$, la emisión ocupa:
 
 $$
 B_{\text{AM}} = 2 \times 4{,}5 = 9\text{ kHz}
 $$
 
-Ahora imagina dos emisoras en canales contiguos, por ejemplo $6000\text{ kHz}$ y $6005\text{ kHz}$:
+Ahora imagina dos emisoras en canales contiguos, por ejemplo $6000\text{ kHz}$ y $6005\text{ kHz}$. Sus zonas ocupadas se solapan entre $6000{,}5$ y $6004{,}5\text{ kHz}$. Si ambas llegan con fuerza al mismo lugar, se pisan.
 
-* La emisora de $6000\text{ kHz}$ ocupa desde $5995{,}5$ hasta $6004{,}5\text{ kHz}$.
-* La emisora de $6005\text{ kHz}$ ocupa desde $6000{,}5$ hasta $6009{,}5\text{ kHz}$.
-* Las dos zonas se solapan entre $6000{,}5$ y $6004{,}5\text{ kHz}$, es decir, unos $4\text{ kHz}$.
-
-Si ambas emisoras llegan con fuerza al mismo lugar, sus bandas laterales se pisan y la voz se vuelve difícil de entender. Hay tres maneras habituales de reducir el problema:
-
-* **Planificación:** las emisoras reparten sus frecuencias para que las vecinas no se usen a la vez hacia la misma zona.
-* **Filtro del receptor:** un filtro más estrecho reduce la interferencia del canal vecino, a costa de algo de calidad de audio. Lo probarás en la Misión Práctica 2.
-* **Audio:** limitar el ancho de banda del audio reduce el solapamiento.
-
-> **Comparación con la MW:** en ondas medias los canales son de $9\text{ kHz}$. Con un audio de $4{,}5\text{ kHz}$, las bandas de canales contiguos apenas se tocan en sus extremos.
+Las emisoras suelen planificar sus frecuencias por separado, pero tu receptor puede filtrar la señal reduciendo el ancho de banda. Lo probarás en la Misión Práctica 2.
 
 ### 4. ¿Por qué suena de noche? La propagación de las emisoras
 
@@ -135,11 +122,13 @@ Las emisoras de radiodifusión publican sus horarios y frecuencias. Estas herram
 | mwlist.org | Lista de emisoras de MW y LW con mapas. Requiere registro. | [mwlist.org](https://www.mwlist.org) |
 | mediumwave.de | Estudio de MW y LW en Centroeuropa. Sus datos son antiguos, así que sirven como histórico. | [mediumwave.de](https://mediumwave.de) |
 
-Las horas de estas herramientas están en **UTC** (hora universal). Para pasarlas a tu hora local, en España suma una hora en invierno (UTC+1) y dos en verano (UTC+2).
+Debido a que estas herramientas, así como las transmisiones que reflejan, tienen alcance global, las horas que indican siempre están en **UTC** (hora universal). Para pasarlas a tu hora local, en España suma una hora en invierno (UTC+1) y dos en verano (UTC+2).
+
+> Los radioaficionados, de los que hablamos en el capítulo 4, también utilizan **UTC** para documentar los contactos y establecer horas.
 
 #### Calentamiento: primera caza de China Radio International
 
-1. Abre [EiBi](http://www.eibispace.de/) o [Shortwave.Live](https://shortwave.live).
+1. Abre [short-wave.info](http://www.short-wave.info/) o [Shortwave.Live](https://shortwave.live).
 2. Busca **China Radio International** (CRI) filtrando por idioma español.
 3. Anota la frecuencia, la banda y el horario en UTC.
 4. Convierte el horario a tu hora local.
@@ -148,12 +137,13 @@ Pregunta para el cuaderno: ¿a qué hora local se escucha y en qué banda?
 
 ### 6. La radiodifusión en MW en España: un paisaje que cambia
 
-La onda media en España está cambiando. Estos son los datos más recientes que hemos podido verificar:
-
-* **RNE:** RTVE anunció en noviembre de 2025 que Radio Nacional y Radio 5 dejarían la Onda Media antes del 31 de diciembre de 2025. Algunas fuentes sitúan el apagado a comienzos de 2026. La OM de RNE estaba en servicio desde 1937.
-* **COPE:** algunas emisoras de OM han dejado de emitir, como la de Valencia (1296 kHz).
+La onda media en España se está quedando sin emisoras. Se están eliminando múltiples transmisiones: en diciembre de 2025, RNE dio de baja todas sus transmisiones de onda media, que eran decenas. Otras cadenas, como COPE, también han cerrado estaciones.
 
 <!-- Pendiente: estado actual de COPE en OM. Confirmar antes de publicar. -->
+
+No obstante, todavía se escuchan varias frecuencias españolas. Cope Madrid (999 kHz) y Onda Cero (954 kHz) emiten con potencia suficiente para llegar, así que puedes intentar encontrarlas a cualquier hora del día.
+
+Otras transmisiones internacionales hay que recibirlas mejor por la noche.
 
 > **¡Atención Cazador!** Estos cambios son recientes. Antes de salir de caza en MW, comprueba en las herramientas de la sección 5 qué emisoras siguen activas en tu zona.
 
@@ -169,14 +159,14 @@ Según la fuente consultada, algunas emisoras eligen estas frecuencias para llam
 
 **Misión de caza:** busca en [EiBi](http://www.eibispace.de/) o en [Shortwave.Live](https://shortwave.live) una emisión que quede fuera de los límites de la tabla de la sección 2, y compara su frecuencia con esos límites.
 
-### 8. Piratas y clandestinas: un apartado breve
+### 8. Piratas y clandestinas: emisiones que no deberían estar
 
-Hay emisoras que no tienen autorización para emitir:
+Mientras escuchas, es posible que encuentres emisiones que no deberían estar ahí. Hay dos casos principales:
 
 * **Piratas:** emiten música o entretenimiento sin licencia. La onda corta les permite llegar mucho más lejos que la AM o la FM locales.
 * **Clandestinas:** emiten en nombre de grupos políticos o insurgentes, a veces desde otro país.
 
-Estas estaciones son otro uso no oficial de la onda corta. Las **estaciones de números**, que veremos en el Capítulo 8, son otro ejemplo.
+También puedes encontrar emisiones de radiodifusión fuera de sus bandas, como las outbanders de la sección 7. Hablaremos de muchas otras emisiones en capítulos posteriores, como las **estaciones de números** del Capítulo 8. Por ahora basta con que sepas que existen.
 
 Como radioescucha, tu papel es **escuchar**. Emitir sin autorización queda fuera del alcance de este manual.
 
@@ -193,17 +183,16 @@ Tu misión consiste en localizar emisoras de Argelia en las ondas medias, de noc
 | $549\text{ kHz}$ | Jil FM, Sidi Hamadouche | Onda media. |
 | $891\text{ kHz}$ | Radio Algérie Internationale, Ouled Fayet, en francés | Onda media. |
 
-<!-- Pendiente: los datos de emplazamiento y potencia son de consultas antiguas. Revisar 531 y 891 kHz, que aparecen con el mismo nombre. Confirmar en mwlist.org antes de publicar. -->
-
 Las frecuencias pueden cambiar. Compruébalas en [mwlist.org](https://www.mwlist.org) antes de salir de caza.
 
 #### Instrucciones en SDR++
 
-1. Espera a que anochezca. Las ondas medias llegan mucho más lejos de noche.
-2. Pon el modo en **AM** y el ancho de banda del filtro en $10\text{ kHz}$.
-3. Centra la vista en $700\text{ kHz}$ para ver a la vez las emisoras de $531$, $549$ y $891\text{ kHz}$.
-4. Haz clic sobre cada pico de la cascada y anota si se oye y con qué calidad.
-5. Repite la búsqueda la noche siguiente. Es normal que una emisora se oiga una noche y no la siguiente.
+1. Prepara la antena: para SW y MW, usa un hilo largo de 5 a 20 metros, colgado por la ventana o sobre el tejado y lo más alejado posible de la estructura del edificio. Si puedes, usa un balun 1:9.
+2. Espera a que anochezca. Las ondas medias llegan mucho más lejos de noche.
+3. Pon el modo en **AM** y el ancho de banda del filtro en $10\text{ kHz}$.
+4. Centra la vista en $700\text{ kHz}$ para ver a la vez las emisoras de $531$, $549$ y $891\text{ kHz}$.
+5. Haz clic sobre cada pico de la cascada y anota si se oye y con qué calidad.
+6. Repite la búsqueda la noche siguiente. Es normal que una emisora se oiga una noche y no la siguiente.
 
 #### Cuaderno de bitácora
 
@@ -220,11 +209,12 @@ Tu misión consiste en comprobar cómo el filtro del receptor afecta al canal ve
 
 #### Instrucciones en SDR++
 
-1. Sintoniza una emisora de AM que se oiga con claridad, de noche en MW o en la banda de CRI del calentamiento.
-2. Pon el modo en **AM** y el ancho de banda en $10\text{ kHz}$. Observa el canal vecino en la cascada.
-3. Reduce el ancho de banda a $6\text{ kHz}$ y, después, a $4\text{ kHz}$.
-4. Observa dos cosas: si el canal vecino pierde fuerza y cómo cambia la voz. Con un filtro muy estrecho el audio suena más apagado.
-5. Vuelve al ancho de banda inicial y anota el resultado.
+1. Usa la misma antena de hilo largo que en la Misión Práctica 1.
+2. Sintoniza una emisora de AM que se oiga con claridad, de noche en MW o en la banda de CRI del calentamiento.
+3. Pon el modo en **AM** y el ancho de banda en $10\text{ kHz}$. Observa el canal vecino en la cascada.
+4. Reduce el ancho de banda a $6\text{ kHz}$ y, después, a $4\text{ kHz}$.
+5. Observa dos cosas: si el canal vecino pierde fuerza y cómo cambia la voz. Con un filtro muy estrecho el audio suena más apagado.
+6. Vuelve al ancho de banda inicial y anota el resultado.
 
 > **¡Regla del cazador!** Busca el punto en el que el canal vecino desaparece sin que la voz pierda inteligibilidad. Ese es el ancho de banda más útil para esa emisora.
 
@@ -241,10 +231,10 @@ Tu misión consiste en comprobar cómo el filtro del receptor afecta al canal ve
 
 * La radiodifusión internacional usa mayoritariamente **AM** en onda corta, con canales separados **$5\text{ kHz}$**.
 * En AM, la señal ocupa **el doble del ancho de banda del audio**, por eso las emisoras vecinas pueden solaparse.
-* El **filtro del receptor** y la **planificación** de frecuencias reducen las interferencias. Puedes probarlo con el ancho de banda en SDR++.
+* Las emisoras suelen planificar sus frecuencias por separado. Tu **filtro** puede reducir el ancho de banda para atenuar al vecino; pruébalo en SDR++.
 * De noche, las bandas bajas (**$60$, $49$ y $41\text{ m}$**) llegan más lejos que de día.
 * Las **outbanders** emiten fuera de su banda. EiBi y Shortwave.Live ayudan a localizarlas.
 * Las **ondas largas** tienen muy pocas emisoras y el RTL-SDR V4 no las recibe. Revisa las capacidades de tu receptor.
-* En España, **RNE** dejó la onda media a finales de 2025 o comienzos de 2026, y algunas emisoras de **COPE** han cerrado en OM.
+* En diciembre de 2025, **RNE** dio de baja todas sus transmisiones de onda media. Otras cadenas, como **COPE**, también han cerrado estaciones, pero **Cope Madrid** (999 kHz) y **Onda Cero** (954 kHz) siguen audibles.
 
 ¡La caza de voces lejanas acaba de empezar!
