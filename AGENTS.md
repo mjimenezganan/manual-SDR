@@ -22,11 +22,16 @@ La publicación debe:
 ## Estructura del proyecto
 
 - `web/`: publicación final (no modificar salvo indicación explícita).
+- `web/content/cap0.md` a `web/content/cap4.md`: capítulos publicados (fuente de lectura, no de modificación).
 - `working/`: ficheros de trabajo de los agentes.
-- `working/Index.md`: borrador de trabajo del índice general. Se puebla inicialmente con el contenido de `web/content/index.html`.
+- `working/Index.md`: borrador de trabajo del índice general, en Markdown, con los temas y sus descripciones.
+- `working/resumen-capitulos.md`: resumen de todo lo mencionado en cap0 a cap4. Es la memoria de trabajo para analizar los capítulos sin releerlos completos.
+- `working/style.md`: guía del estilo narrativo de cap0 a cap4 (títulos, ejemplos, actividades, tono, formato) para replicarlo.
 - `AGENTS.md`: este documento.
 
 ## Instrucciones de trabajo
 
 - Mantener el seguimiento de tareas (hecho / pendiente) en `working/`.
+- Antes de analizar o redactar capítulos, consultar `working/resumen-capitulos.md` como memoria de trabajo y `working/style.md` para el estilo. Leer los capítulos completos solo cuando haga falta el detalle.
+- Si cambia el contenido de cap0 a cap4, actualizar `working/resumen-capitulos.md` y, si cambia el estilo, `working/style.md`.
 - Cada commit debe tener un mensaje descriptivo de lo que cambia.
