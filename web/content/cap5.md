@@ -26,7 +26,7 @@ La radiodifusión en amplitud se reparte en tres zonas del espectro. Dos de ella
 
 La onda larga tiene pocas emisoras. Según Wikipedia, las causas son la poca audiencia, la falta de receptores de consumo que la incluyan, las interferencias y el alto coste energético de la emisión. Quedan muy pocas emisoras en LW, en países como Rumanía, Polonia, Argelia y Mongolia.
 
-La onda media sigue más vivas, sobre todo de noche. En el último apartado de este capítulo veremos el caso de España.
+La onda media sigue más viva, sobre todo de noche. En el último apartado de este capítulo veremos el caso de España.
 
 #### Tabla de bandas de radiodifusión en onda corta
 
@@ -61,15 +61,15 @@ La mayoría de emisoras internacionales de onda corta usan **AM** con **separaci
 ```text
  Amplitud
     ▲
-    │                       │
-    │                       │  Portadora
-    │          ▄▄▄          │         ▄▄▄
-    │        ▄█████▄        │       ▄█████▄
-    │      ▄█████████▄      │     ▄█████████▄
-    └──────────────────────────────────────────► Frecuencia
-          Banda lateral     ▲         Banda lateral
-            inferior        │           superior
-                        Portadora
+    │                  │
+    │                  │
+    │          ▄▄▄     │     ▄▄▄
+    │        ▄█████▄   │   ▄█████▄
+    │      ▄█████████▄ │ ▄█████████▄
+    └───────────────────────────────────────► Frecuencia
+        Banda lateral  ▲  Banda lateral
+          inferior     │    superior
+                    Portadora
 ```
 
 > **¿Cómo interpretar este mapa?** En el centro está la **portadora**, una línea fija que no lleva voz. A cada lado aparece una **banda lateral** que contiene la voz. Ambas bandas son copias de la misma información, y por eso la emisión ocupa una zona alrededor de la portadora.
@@ -177,12 +177,12 @@ Como radioescucha, tu papel es **escuchar**. Emitir sin autorización queda fuer
 
 Tu misión consiste en recorrer con tu SDR una o varias bandas de onda corta y anotar qué emisoras encuentras. Después repetirás el mismo barrido en otro momento para comparar los resultados.
 
-**Bandas propuestas:** elige una o varias de la tabla de la sección 2, por ejemplo, la de $49\text{ m}$ o la de $41\text{ m}$.
+**Bandas propuestas:** elige una o varias de la tabla de la sección 2, por ejemplo, la de $49\text{ m}$ o la de $41\text{ m}$. Presta atención a la propagación y al momento del día en el que lo vas a hacer a la hora de elegir las bandas a _barrer_.
 
 #### Instrucciones en SDR++
 
 1. Prepara la antena: para SW y MW, usa un hilo largo de 5 a 20 metros, colgado por la ventana o sobre el tejado y lo más alejado posible de la estructura del edificio. Si puedes, usa un balun 1:9 para reducir impedancia y mejorar la recepción.
-2. Pon el modo en **AM** y el ancho de banda en $10\text{ kHz}$.
+2. Pon el modo en **AM** y el ancho de banda en $9\text{ kHz}$.
 3. Sitúa la vista al principio de la banda y desplaza el visor despacio hasta el final, observando la cascada.
 4. Cada vez que aparezca una señal fuerte, haz clic sobre ella e identifica la emisora con [EiBi](http://www.eibispace.de/), [Shortwave.Live](https://shortwave.live) o [short-wave.info](http://www.short-wave.info/).
 5. Anota la frecuencia, la emisora, la hora UTC de recepción y tus notas.
@@ -225,7 +225,7 @@ Las frecuencias pueden cambiar. Compruébalas en [mwlist.org](https://www.mwlist
 
 1. Usa la misma antena de hilo largo que en la Misión Práctica 1.
 2. Espera a que anochezca. La onda media llega mucho más lejos de noche.
-3. Pon el modo en **AM** y el ancho de banda del filtro en $10\text{ kHz}$.
+3. Pon el modo en **AM** y el ancho de banda del filtro en $9\text{ kHz}$.
 4. Centra la vista en $700\text{ kHz}$ para ver a la vez las emisoras de $531$, $549$ y $891\text{ kHz}$.
 5. Haz clic sobre cada pico de la cascada y anota si se oye y con qué calidad.
 6. Repite la búsqueda la noche siguiente. Es normal que una emisora se oiga una noche y no la siguiente.
@@ -247,9 +247,9 @@ Tu misión consiste en comprobar cómo el filtro del receptor afecta al canal ve
 
 1. Usa la misma antena de hilo largo que en la Misión Práctica 1.
 2. Sintoniza una emisora de AM que se oiga con claridad, de noche en MW o en la banda de CRI del calentamiento.
-3. Pon el modo en **AM** y el ancho de banda en $10\text{ kHz}$. Observa el canal vecino en la cascada.
+3. Pon el modo en **AM** y el ancho de banda en $9\text{ kHz}$. Observa el canal vecino en la cascada.
 4. Reduce el ancho de banda a $6\text{ kHz}$ y, después, a $4\text{ kHz}$.
-5. Observa dos cosas: si el canal vecino pierde fuerza y cómo cambia la voz. Con un filtro muy estrecho el audio suena más apagado.
+5. Observa dos cosas: si el canal vecino pierde fuerza y cómo cambia la voz. Con un filtro muy estrecho el audio suena más apagado. ¿Hasta qué ancho de banda eres capaz de entender al locutor?
 6. Vuelve al ancho de banda inicial y anota el resultado.
 
 > **¡Regla del cazador!** Busca el punto en el que el canal vecino desaparece sin que la voz pierda inteligibilidad. Ese es el ancho de banda más útil para esa emisora.
