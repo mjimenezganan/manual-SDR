@@ -97,7 +97,15 @@ $$
 
 Ahora imagina dos emisoras en canales contiguos, por ejemplo $6000\text{ kHz}$ y $6005\text{ kHz}$. Sus zonas ocupadas se solapan entre $6000{,}5$ y $6004{,}5\text{ kHz}$. Si ambas llegan con fuerza al mismo lugar, se pisan.
 
-Las emisoras suelen planificar sus frecuencias por separado, pero tu receptor puede filtrar la señal reduciendo el ancho de banda. Lo probarás en la Misión Práctica 2.
+Las emisoras suelen planificar sus frecuencias por separado, pero tu receptor puede filtrar la señal reduciendo el ancho de banda. Lo probarás en la Misión Práctica 3.
+
+#### Fading: la señal que sube y baja
+
+Una emisora puede sonar fuerte y, minutos después, desvanecerse hasta casi desaparecer. Es el **fading**, y es muy habitual en las emisoras de onda media, sobre todo de noche.
+
+Ocurre porque la señal llega por dos caminos: la onda de superficie, que sigue el suelo, y la onda reflejada en la ionosfera, que llega desde mucho más lejos. Cuando las dos llegan con fases distintas, se suman en unos momentos y se restan en otros. Como la ionosfera cambia continuamente, la señal sube y baja.
+
+En SDR++ lo verás como una línea que cambia de intensidad en la cascada. Si la voz se apaga y vuelve, probablemente sea fading y no un problema de tu equipo.
 
 ### 4. ¿Por qué suena de noche? La propagación de las emisoras
 
@@ -135,17 +143,19 @@ Debido a que estas herramientas, así como las transmisiones que reflejan, tiene
 
 Pregunta para el cuaderno: ¿a qué hora local se escucha y en qué banda?
 
+#### Horarios: cíclicos y en punto
+
+La programación de las emisoras de onda corta suele ser **cíclica con la semana**: una emisión que suena el martes a una hora suele repetirse el martes siguiente a esa misma hora.
+
+Además, los cambios de emisora suelen producirse **a las horas en punto** o **3 minutos antes**. Por ejemplo, si una emisión empieza a las 20:00 UTC, el cambio de frecuencia puede producirse a las 19:57 UTC. Puedes comprobarlo en [short-wave.info](http://www.short-wave.info/), donde se ven los horarios de cada emisión.
+
 ### 6. La radiodifusión en MW en España: un paisaje que cambia
 
 La onda media en España se está quedando sin emisoras. Se están eliminando múltiples transmisiones: en diciembre de 2025, RNE dio de baja todas sus transmisiones de onda media, que eran decenas. Otras cadenas, como COPE, también han cerrado estaciones.
 
-<!-- Pendiente: estado actual de COPE en OM. Confirmar antes de publicar. -->
-
-No obstante, todavía se escuchan varias frecuencias españolas. Cope Madrid (999 kHz) y Onda Cero (954 kHz) emiten con potencia suficiente para llegar, así que puedes intentar encontrarlas a cualquier hora del día.
+No obstante, todavía se escuchan varias frecuencias españolas. Cope Madrid (999 kHz) y Onda Cero (954 kHz) emiten con gran potencia desde el centro de la península, así que puedes intentar encontrarlas a cualquier hora del día.
 
 Otras transmisiones internacionales hay que recibirlas mejor por la noche.
-
-> **¡Atención Cazador!** Estos cambios son recientes. Antes de salir de caza en MW, comprueba en las herramientas de la sección 5 qué emisoras siguen activas en tu zona.
 
 ### 7. Outbanders: voces fuera de su banda
 
@@ -170,9 +180,42 @@ También puedes encontrar emisiones de radiodifusión fuera de sus bandas, como 
 
 Como radioescucha, tu papel es **escuchar**. Emitir sin autorización queda fuera del alcance de este manual.
 
-### 9. Misión Práctica 1: Caza nocturna de la radio argelina
+### 9. Misión Práctica 1: Barrido de bandas de onda corta
 
-Tu misión consiste en localizar emisoras de Argelia en las ondas medias, de noche, y anotar qué consigues recibir.
+Tu misión consiste en recorrer con tu SDR una o varias bandas de onda corta y anotar qué emisoras encuentras. Después repetirás el mismo barrido en otro momento para comparar los resultados.
+
+**Bandas propuestas:** elige una o varias de la tabla de la sección 2, por ejemplo, la de $49\text{ m}$ o la de $41\text{ m}$.
+
+#### Instrucciones en SDR++
+
+1. Prepara la antena: para SW y MW, usa un hilo largo de 5 a 20 metros, colgado por la ventana o sobre el tejado y lo más alejado posible de la estructura del edificio. Si puedes, usa un balun 1:9 para reducir impedancia y mejorar la recepción.
+2. Pon el modo en **AM** y el ancho de banda en $10\text{ kHz}$.
+3. Sitúa la vista al principio de la banda y desplaza el visor despacio hasta el final, observando la cascada.
+4. Cada vez que aparezca una señal fuerte, haz clic sobre ella e identifica la emisora con [EiBi](http://www.eibispace.de/), [Shortwave.Live](https://shortwave.live) o [short-wave.info](http://www.short-wave.info/).
+5. Anota la frecuencia, la emisora, la hora UTC de recepción y tus notas.
+6. Repite el mismo barrido, a poder ser en el mismo día de la semana y a la misma hora UTC, en otra semana, y compara las dos tablas.
+
+> **¡Regla del cazador!** La programación de onda corta suele repetirse cada semana. Si una emisora aparece en una semana y no en la siguiente, anótalo: también es un dato.
+
+#### Cuaderno de bitácora: barrido 1
+
+| Frecuencia (kHz) | Emisora | Hora de recepción (UTC) | Notas |
+| :---: | :--- | :---: | :--- |
+| *6000* | *Emisora de ejemplo* | *20:00* | *Voz clara, se oye bien.* |
+|  |  |  |  |
+|  |  |  |  |
+
+#### Cuaderno de bitácora: barrido 2 (otra semana, mismo día y hora)
+
+| Frecuencia (kHz) | Emisora | Hora de recepción (UTC) | Notas |
+| :---: | :--- | :---: | :--- |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+### 10. Misión Práctica 2: Caza nocturna de la radio argelina
+
+Tu misión consiste en localizar emisoras de Argelia en onda media (MW), de noche, y anotar qué consigues recibir.
 
 **Frecuencias candidatas:**
 
@@ -187,7 +230,7 @@ Las frecuencias pueden cambiar. Compruébalas en [mwlist.org](https://www.mwlist
 
 #### Instrucciones en SDR++
 
-1. Prepara la antena: para SW y MW, usa un hilo largo de 5 a 20 metros, colgado por la ventana o sobre el tejado y lo más alejado posible de la estructura del edificio. Si puedes, usa un balun 1:9.
+1. Usa la misma antena de hilo largo que en la Misión Práctica 1.
 2. Espera a que anochezca. Las ondas medias llegan mucho más lejos de noche.
 3. Pon el modo en **AM** y el ancho de banda del filtro en $10\text{ kHz}$.
 4. Centra la vista en $700\text{ kHz}$ para ver a la vez las emisoras de $531$, $549$ y $891\text{ kHz}$.
@@ -203,7 +246,7 @@ Las frecuencias pueden cambiar. Compruébalas en [mwlist.org](https://www.mwlist
 |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |
 
-### 10. Misión Práctica 2: Ajuste del ancho de banda
+### 11. Misión Práctica 3: Ajuste del ancho de banda
 
 Tu misión consiste en comprobar cómo el filtro del receptor afecta al canal vecino y a la calidad del audio.
 
@@ -233,6 +276,8 @@ Tu misión consiste en comprobar cómo el filtro del receptor afecta al canal ve
 * En AM, la señal ocupa **el doble del ancho de banda del audio**, por eso las emisoras vecinas pueden solaparse.
 * Las emisoras suelen planificar sus frecuencias por separado. Tu **filtro** puede reducir el ancho de banda para atenuar al vecino; pruébalo en SDR++.
 * De noche, las bandas bajas (**$60$, $49$ y $41\text{ m}$**) llegan más lejos que de día.
+* La programación de onda corta suele repetirse cada semana, y los cambios de emisora suelen producirse en punto o 3 minutos antes.
+* En onda media, sobre todo de noche, el **fading** hace que la señal suba y baje.
 * Las **outbanders** emiten fuera de su banda. EiBi y Shortwave.Live ayudan a localizarlas.
 * Las **ondas largas** tienen muy pocas emisoras y el RTL-SDR V4 no las recibe. Revisa las capacidades de tu receptor.
 * En diciembre de 2025, **RNE** dio de baja todas sus transmisiones de onda media. Otras cadenas, como **COPE**, también han cerrado estaciones, pero **Cope Madrid** (999 kHz) y **Onda Cero** (954 kHz) siguen audibles.
