@@ -25,8 +25,8 @@ Estado: borrador para decidir temas. Nada de esto está publicado ni debe pasar 
 | Forma del espectro AM en SW, como se hizo con SSB | Válido. Propuesta de visualización en sección 3. |
 | Separación de 5 kHz entre canales y ancho de banda | Corregido: la separación es de 5 kHz, no de 5 MHz. Ver sección 3. |
 | Ondas largas y medias: por qué quedan pocas LW | Válido. Ver sección 2. |
-| Radiodifusión en MW en España (RNE y COPE retirándose) | No verificado. Las fuentes consultadas no lo confirman ni lo desmienten. Hay que comprobarlo antes de publicarlo. |
-| Argelia: Jil FM y Radio Algérie Internationale | Válido como ejercicio. Las frecuencias encontradas proceden de una lista antigua y deben verificarse. Ver sección 5. |
+| Radiodifusión en MW en España (RNE y COPE retirándose) | Verificado en lo esencial. RNE dejó la onda media a finales de 2025 y COPE está cerrando emisoras en 2026. Ver sección 2, "Estado de la MW en España". |
+| Argelia: Jil FM y Radio Algérie Internationale | Válido como ejercicio. Las frecuencias se mantienen tal cual (decisión del autor). Ver sección 5. |
 | Buscadores de MW (mwlist, mediumwave.de) | Válido. Ver sección 4. mwlist requiere registro. |
 | Emisión fuera de banda como ejemplo | Encontrado. Ver sección 3. |
 
@@ -58,7 +58,7 @@ Estado: borrador para decidir temas. Nada de esto está publicado ni debe pasar 
 | 13 m | 21,45 a 21,85 MHz |
 | 11 m | 25,67 a 26,1 MHz |
 
-Nota: la tabla de referencia en [Wikipedia (Shortwave bands)](https://en.wikipedia.org/wiki/Shortwave_bands) no se pudo leer en la consulta. Estos rangos deben cotejarse antes de publicarlos. Algunos países no usan todas las bandas; por ejemplo, Países Bajos no tiene 120 m, 90 m ni 60 m.
+Nota: tabla mantenida tal como está, por decisión del autor. Algunos países no usan todas las bandas; por ejemplo, Países Bajos no tiene 120 m, 90 m ni 60 m.
 
 ### Propagación
 
@@ -78,12 +78,31 @@ Nota: la tabla de referencia en [Wikipedia (Shortwave bands)](https://en.wikiped
 
 ---
 
+### Estado de la MW en España (verificado)
+
+- **RNE:** RTVE anunció el 18/11/2025 que Radio Nacional y Radio 5 dejan la Onda Media, con cese antes del 31 de diciembre de 2025. La OM de RNE estaba en servicio desde 1937. Fuente: nota de prensa de RTVE, recogida en [gorkazumeta.com](https://www.gorkazumeta.com). Otra fuente sitúa el apagado a comienzos de 2026 ([Serviradio](https://www.serviradio.com)).
+- **COPE:** durante 2026 cierra emisoras de OM. Las emisoras afectadas emiten un mensaje en bucle que invita a seguir la programación en FM o en redes sociales. Fuente: [Guía de la Radio](https://www.guiadelaradio.com).
+  - Valencia 1296 kHz: mensaje en bucle; posible cierre alrededor del 31 de marzo de 2026.
+  - Gran Canaria 837 kHz: apagada el 30 de junio de 2026 ([Serviradio](https://www.serviradio.com)).
+  - Murcia 711 kHz, Badajoz 1269 kHz, Ferrol 837 kHz, León 1215 kHz, Ourense 1143 kHz y Zaragoza 1053 kHz: mensaje en bucle según informan grupos de escucha; no confirmado emisora a emisora.
+- La situación cambia con rapidez: confirmar antes de publicar (ver sección 10).
+
+---
+
 ## 3. Espectro AM y separación de canales
 
-- La radiodifusión internacional en SW usa **AM** con **separación de 5 kHz** entre canales (asignaciones WRC-97). La SSB no se usa para radiodifusión musical.
+- La mayoría de emisoras internacionales de SW usan **AM** con **separación de 5 kHz** entre canales (asignaciones WRC-97). Algunas usan BLU (banda lateral única).
 - DRM (radio digital) usa canales de 10 kHz o 20 kHz. Encaja mejor en el capítulo 13.
-- **Propuesta de visualización:** dibujar una portadora con dos bandas laterales simétricas (espectro AM), como se hizo con SSB en el capítulo 4. Mostrar que la información de audio ocupa a ambos lados de la portadora.
-- **Pregunta a resolver:** si la AM ocupa unos 9 kHz (con audio de 4,5 kHz) y los canales están cada 5 kHz, los canales vecinos se solapan. Hay que confirmar cómo se gestiona (filtrado de audio, coordinación de frecuencias) antes de explicarlo.
+- **Propuesta de visualización (versión simplificada respecto al capítulo 4):** una portadora con dos bandas laterales simétricas. Mostrar que el audio ocupa ambos lados de la portadora y que el canal vecino cae dentro de esa zona.
+- **Solapamiento de canales:**
+  - En AM, la señal ocupa el doble del ancho de banda del audio: portadora más dos bandas laterales. Con audio de unos 4,5 kHz, cada emisión ocupa unos 9 kHz.
+  - En SW los canales están cada 5 kHz. Dos emisoras en canales contiguos (por ejemplo, 6000 y 6005 kHz) comparten parte de sus bandas laterales: si ambas llegan con fuerza al mismo lugar, se pisan.
+  - Cómo se evita en la práctica:
+    - Planificación: las frecuencias se asignan para que emisoras contiguas no se usen a la vez hacia la misma zona.
+    - Receptor: un filtro más estrecho reduce la interferencia del vecino, a costa de menos calidad de audio.
+    - Audio: limitar el ancho de banda del audio reduce el solapamiento.
+  - Comparación: en MW, con canales de 9 kHz y audio de 4,5 kHz, las bandas laterales de canales contiguos llegan justo a tocarse (deducción a partir de las cifras anteriores).
+  - Estado de verificación: la separación de 5 kHz y la relación de ancho AM = 2 × audio están verificadas (Wikipedia). El valor de 4,5 kHz y el método de coordinación exacto no están verificados con fuente oficial (ver sección 10).
 - **Comparación con MW y LW:** canales de 9 kHz (Región 1) o 10 kHz (Región 2). Esto es parte del Plan de Ginebra de 1975 para LW: frecuencias múltiplos de 9 kHz entre 153 y 279 kHz.
 
 ---
@@ -136,7 +155,7 @@ Propuesta de actividad: que el lector busque un canal en EiBi o Shortwave.Live q
 
 ---
 
-## 7. Emisoras piratas y clandestinas (propuesta complementaria)
+## 7. Emisoras piratas y clandestinas (apartado breve)
 
 - **Piratas:** emisoras no autorizadas que emiten música o entretenimiento. Aprovechan la propagación de la SW para llegar más lejos que en AM o FM.
 - **Clandestinas:** emiten en nombre de movimientos políticos o insurgentes. Pueden transmitir desde territorio controlado por rebeldes o desde otro país.
@@ -154,9 +173,9 @@ Propuesta de actividad: que el lector busque un canal en EiBi o Shortwave.Live q
 5. Separación de canales: 5 kHz en SW, 9 kHz en LW/MW Región 1.
 6. Cómo encontrar emisoras: EiBi, Shortwave.Live, short-wave.info, mwlist.
 7. Emisiones fuera de banda (outbanders): definición, ejemplos y cómo detectarlas.
-8. Radiodifusión en MW en España: estado actual (pendiente de verificar).
+8. Radiodifusión en MW en España: estado actual (verificado, ver sección 2).
 9. Piratas y clandestinas: definición y diferencia con la escucha legal.
-10. Radioescucha práctica: antena de ferrita para LW/MW y la limitación de algunos SDR por debajo de 24 MHz (dato que hay que comprobar con el modelo concreto).
+10. Radioescucha práctica: antena de ferrita para LW/MW. No todos los RTL-SDR llegan a LW y MW: en general, los modelos sin modo HF necesitan direct sampling o un convertidor por debajo de unos 24 MHz. El RTL-SDR Blog V4 tiene modo HF propio (sin direct sampling) y requiere el driver de RTL-SDR Blog.
 
 ---
 
@@ -172,18 +191,17 @@ Propuesta de actividad: que el lector busque un canal en EiBi o Shortwave.Live q
 
 ## 10. Pendiente de verificar antes de escribir
 
-- [ ] Tabla de bandas de SW (sección 2): cotejar con la fuente oficial.
-- [ ] Argelia (sección 5): confirmar que las cuatro frecuencias siguen activas, porque el ejercicio se apoya en ellas.
-- [ ] China Radio International en español (sección 0): confirmar en EiBi que tiene emisiones en español en el horario actual.
-- [ ] Estado de la MW en España (RNE y COPE): no verificado.
-- [ ] Explicación del solapamiento de canales AM con separación de 5 kHz (sección 3).
-- [ ] Compatibilidad de SDR concretos con LW y MW (sección 8, punto 10).
+- [ ] Cifra de 4,5 kHz de ancho de audio en AM de SW y método de coordinación entre canales vecinos (sección 3): confirmar con fuente oficial (reglamento de la UIT o planes de coordinación HF).
+- [ ] Estado actual de cada emisora de COPE en OM (sección 2): la situación cambia deprisa; confirmar antes de publicar.
+- [ ] Cobertura exacta en LW y MW del RTL-SDR V4 (sección 8, punto 10): comprobar en la ficha del fabricante.
+
+Resueltos: frecuencias de Argelia (mantenidas), CRI en español (confirmado), tabla de bandas de SW (mantenida), estado de la MW en España (verificado), compatibilidad general de SDR (sección 8, punto 10).
 
 ---
 
-## 11. Decisiones que necesito del autor
+## 11. Decisiones del autor (resueltas)
 
-1. ¿Incluimos LW y MW en el capítulo o solo SW? Las LW aparecen en el título del capítulo sólo implícitamente.
-2. ¿Qué peso dar a las piratas y clandestinas? Podrían formar un capítulo aparte o un apartado breve.
+1. Resuelta: se incluyen LW y MW, con énfasis en SW.
+2. Resuelta: piratas y clandestinas en un apartado breve (sección 7).
 3. Resuelta: Argelia como ejercicio principal, con todas las frecuencias candidatas y búsqueda nocturna.
-4. ¿Mantenemos la visualización del espectro AM con la misma profundidad que en el capítulo 4?
+4. Resuelta: la visualización del espectro AM es más simple que en el capítulo 4.
