@@ -8,6 +8,14 @@ Estado: borrador para decidir temas. Nada de esto está publicado ni debe pasar 
 
 ---
 
+## 0. Ejercicio de entrada (mini)
+
+- Buscar China Radio International en español en [Shortwave.Live](https://shortwave.live) o en [EiBi](http://www.eibispace.de/), filtrando por emisora e idioma.
+- Anotar: frecuencia, banda, horario en UTC y zona de destino.
+- Pregunta para el lector: ¿a qué hora local se escucha y en qué banda? Convertir UTC a hora local.
+
+---
+
 ## 1. Temas pedidos y comprobación
 
 | Tema pedido | Comentario tras la búsqueda |
@@ -19,7 +27,7 @@ Estado: borrador para decidir temas. Nada de esto está publicado ni debe pasar 
 | Ondas largas y medias: por qué quedan pocas LW | Válido. Ver sección 2. |
 | Radiodifusión en MW en España (RNE y COPE retirándose) | No verificado. Las fuentes consultadas no lo confirman ni lo desmienten. Hay que comprobarlo antes de publicarlo. |
 | Argelia: Jil FM y Radio Algérie Internationale | Válido como ejercicio. Las frecuencias encontradas proceden de una lista antigua y deben verificarse. Ver sección 5. |
-| Buscadores de MW (mwlist, mediumwave.de) | Válido. Ver sección 4. mwlist parece permitir acceso como invitado; hay que comprobarlo. |
+| Buscadores de MW (mwlist, mediumwave.de) | Válido. Ver sección 4. mwlist requiere registro. |
 | Emisión fuera de banda como ejemplo | Encontrado. Ver sección 3. |
 
 ---
@@ -68,12 +76,6 @@ Nota: la tabla de referencia en [Wikipedia (Shortwave bands)](https://en.wikiped
 - BBC Radio 4 cerró su LW en 198 kHz el 27 de junio de 2026.
 - Según la misma fuente (versión de septiembre de 2026), las únicas emisoras de LW que quedan son las de Rumanía, Polonia, Argelia y Mongolia.
 
-### Relojes y señales de tiempo (tema complementario)
-
-- **DCF77** (Frankfurt, 77,5 kHz, 50 kW) y **ALS162** (Allouis, Francia, 162 kHz, 800 kW): señales de hora para relojes de radio.
-- **WWV** (EE. UU.): 2,5, 5, 10, 15 y 20 MHz, con voz y pitidos de hora en SW.
-- Por qué LW: la onda de superficie sigue siempre el mismo trayecto, así que el retardo es constante en cada lugar y basta con una corrección fija. En SW el trayecto cambia con la ionosfera y el retardo varía.
-
 ---
 
 ## 3. Espectro AM y separación de canales
@@ -93,23 +95,28 @@ Nota: la tabla de referencia en [Wikipedia (Shortwave bands)](https://en.wikiped
 | EiBi | Base de datos de horarios de emisoras de SW, mantenida por Eike Bierwirth. Incluye archivo histórico desde 2000 y la programación de invierno 2026/2027. Es la fuente de muchas apps. | [eibispace.de](http://www.eibispace.de/) (no confundir con eibi.de, que es otra empresa) |
 | Shortwave.Live | Interfaz web sobre la base EiBi. Muestra qué se emite ahora, con emisoras en verde. Buscar por frecuencia, emisora, idioma o zona. | [shortwave.live](https://shortwave.live) |
 | short-wave.info | Consulta de horarios de emisoras de SW. Búsqueda por emisora o por frecuencia ±5 kHz; incluye lista de bandas de 120 m. | [short-wave.info](http://www.short-wave.info/) |
-| mwlist.org | Lista de emisoras de MW y LW con mapas. Tiene "Who is on this frequency - Now?" para 2 a 30 MHz. | [mwlist.org](https://www.mwlist.org) |
+| mwlist.org | Lista de emisoras de MW y LW con mapas. Tiene "Who is on this frequency - Now?" para 2 a 30 MHz. Requiere registro. | [mwlist.org](https://www.mwlist.org) |
 | mediumwave.de | Estudio de MW y LW en Centroeuropa. Útil como histórico, pero la fecha de sus datos es antigua. | [mediumwave.de](https://mediumwave.de) |
 
 Notas:
-- La página de mwlist ofrece "Weiter als Gast" (continuar como invitado), lo que contradice la idea de que haga falta registro. Hay que comprobarlo antes de decirlo en la publicación.
 - Las horas de las emisoras están en UTC. Hay que explicar la conversión a hora local.
 
 ---
 
 ## 5. Ejercicio con Argelia
 
-- Según la lista de [mediumwave.de](https://mediumwave.de) (datos antiguos):
-  - RAI (Radio Algérie Internationale) en 531 kHz, Ain El Beida, 600 kW.
-  - Jil FM en 549 kHz, Sidi Hamadouche, 300 kW.
-  - Radio Algérie en LW en 252 kHz, 1.500 kW.
-- Shortwave.Live muestra en su tabla de emisión actual a R. Algiers Int. en 891 kHz (Ouled Fayet, en francés, a las 16:00 UTC). Es una instantánea, no un dato estable.
-- **Acción:** antes de publicar el ejercicio, confirmar las frecuencias en mwlist y Shortwave.Live. Dejar el ejercicio con una frase que pida al lector comprobar la frecuencia actual.
+Enunciado propuesto: el lector localiza qué emisoras argelinas están en el aire y de qué emisora es cada una. Candidatos que se dan en el ejercicio:
+
+- 252 kHz (LW): Radio Algérie, 1.500 kW (dato de [mediumwave.de](https://mediumwave.de), antiguo).
+- 531 kHz (MW): RAI (Radio Algérie Internationale), Ain El Beida, 600 kW (dato antiguo).
+- 549 kHz (MW): Jil FM, Sidi Hamadouche, 300 kW (dato antiguo).
+- 891 kHz (MW): R. Algiers Int., Ouled Fayet, en francés (dato de [Shortwave.Live](https://shortwave.live), instantánea).
+
+Indicaciones para el lector:
+
+- Hacerlo de noche. En MW, la propagación de noche depende de la ionosfera, y no todas las noches hay la misma propagación: una emisora puede oírse una noche y no la siguiente.
+- Anotar fecha, hora en UTC y local, frecuencia y si se recibió, con qué calidad.
+- Si hace falta, contrastar con [mwlist.org](https://www.mwlist.org) (requiere registro).
 
 ---
 
@@ -147,10 +154,9 @@ Propuesta de actividad: que el lector busque un canal en EiBi o Shortwave.Live q
 5. Separación de canales: 5 kHz en SW, 9 kHz en LW/MW Región 1.
 6. Cómo encontrar emisoras: EiBi, Shortwave.Live, short-wave.info, mwlist.
 7. Emisiones fuera de banda (outbanders): definición, ejemplos y cómo detectarlas.
-8. Relojes de radio y señales de tiempo en LW y SW.
-9. Radiodifusión en MW en España: estado actual (pendiente de verificar).
-10. Piratas y clandestinas: definición y diferencia con la escucha legal.
-11. Radioescucha práctica: antena de ferrita para LW/MW y la limitación de algunos SDR por debajo de 24 MHz (dato que hay que comprobar con el modelo concreto).
+8. Radiodifusión en MW en España: estado actual (pendiente de verificar).
+9. Piratas y clandestinas: definición y diferencia con la escucha legal.
+10. Radioescucha práctica: antena de ferrita para LW/MW y la limitación de algunos SDR por debajo de 24 MHz (dato que hay que comprobar con el modelo concreto).
 
 ---
 
@@ -160,18 +166,18 @@ Propuesta de actividad: que el lector busque un canal en EiBi o Shortwave.Live q
 - Diario de propagación: anotar qué bandas se escuchan de día y de noche durante una semana.
 - Caza de outbanders: encontrar una emisión fuera de banda con Shortwave.Live y compararla con la tabla de bandas.
 - Viaje a la MW: escuchar la misma emisora en MW de día y de noche y comparar la calidad.
-- Reloj de radio: explicar cómo se sincroniza un reloj con DCF77 y por qué el retardo es constante en un mismo lugar.
+- Barrido de una banda: elegir una banda de la tabla de la sección 2 (por ejemplo, 41 m o 31 m) y, con el SDR en modo espectro, anotar qué señales aparecen, en qué frecuencias y con qué intensidad visual. Comparar después con lo que se escucha. Es habitual encontrar emisiones de China Radio International, muy intensas, que sirven para mostrar que la potencia del transmisor se ve claramente en el espectro.
 
 ---
 
 ## 10. Pendiente de verificar antes de escribir
 
 - [ ] Tabla de bandas de SW (sección 2): cotejar con la fuente oficial.
-- [ ] Frecuencias actuales de Argelia (sección 5).
+- [ ] Argelia (sección 5): confirmar que las cuatro frecuencias siguen activas, porque el ejercicio se apoya en ellas.
+- [ ] China Radio International en español (sección 0): confirmar en EiBi que tiene emisiones en español en el horario actual.
 - [ ] Estado de la MW en España (RNE y COPE): no verificado.
-- [ ] Acceso de invitado en mwlist.org: comprobar.
 - [ ] Explicación del solapamiento de canales AM con separación de 5 kHz (sección 3).
-- [ ] Compatibilidad de SDR concretos con LW y MW (sección 8, punto 11).
+- [ ] Compatibilidad de SDR concretos con LW y MW (sección 8, punto 10).
 
 ---
 
@@ -179,5 +185,5 @@ Propuesta de actividad: que el lector busque un canal en EiBi o Shortwave.Live q
 
 1. ¿Incluimos LW y MW en el capítulo o solo SW? Las LW aparecen en el título del capítulo sólo implícitamente.
 2. ¿Qué peso dar a las piratas y clandestinas? Podrían formar un capítulo aparte o un apartado breve.
-3. ¿Usamos Argelia como ejercicio principal o damos más países?
+3. Resuelta: Argelia como ejercicio principal, con todas las frecuencias candidatas y búsqueda nocturna.
 4. ¿Mantenemos la visualización del espectro AM con la misma profundidad que en el capítulo 4?
