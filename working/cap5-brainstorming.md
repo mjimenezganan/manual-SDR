@@ -24,7 +24,7 @@ Estado: borrador para decidir temas. Nada de esto está publicado ni debe pasar 
 | Buscadores de frecuencias (short-wave.info, Shortwave.Live, EiBi) | Válido. Ver sección 4. "whortwavelive" se interpreta como [Shortwave.Live](https://shortwave.live). |
 | Forma del espectro AM en SW, como se hizo con SSB | Válido. Propuesta de visualización en sección 3. |
 | Separación de 5 kHz entre canales y ancho de banda | Corregido: la separación es de 5 kHz, no de 5 MHz. Ver sección 3. |
-| Ondas largas y medias: por qué quedan pocas LW | Válido. Ver sección 2. |
+| Ondas largas y medias: por qué quedan pocas LW | Válido, con poco peso en el capítulo. Ver sección 2. |
 | Radiodifusión en MW en España (RNE y COPE retirándose) | Verificado en lo esencial. RNE dejó la onda media a finales de 2025 y COPE está cerrando emisoras en 2026. Ver sección 2, "Estado de la MW en España". |
 | Argelia: Jil FM y Radio Algérie Internationale | Válido como ejercicio. Las frecuencias se mantienen tal cual (decisión del autor). Ver sección 5. |
 | Buscadores de MW (mwlist, mediumwave.de) | Válido. Ver sección 4. mwlist requiere registro. |
@@ -36,7 +36,7 @@ Estado: borrador para decidir temas. Nada de esto está publicado ni debe pasar 
 
 ### Mapa de bandas
 
-- **Ondas largas (LW):** 148,5 a 283,5 kHz en la Región 1 de la UIT (Europa, África y parte de Asia). Propagación por onda de superficie; cobertura de hasta unos 2.000 km por onda de superficie y más de 3.000 km por onda reflejada.
+- **Ondas largas (LW):** 148,5 a 283,5 kHz en la Región 1 de la UIT. Con el RTL-SDR V4 (cobertura de 500 kHz a 1766 MHz) no se recibe: el lector debe revisar las capacidades de su propio receptor.
 - **Ondas medias (MW):** 531 a 1.602 kHz en Europa (Región 1), con canales de 9 kHz. En América (Región 2) los canales son de 10 kHz. (Dato conocido; verificar la cifra exacta antes de publicar.)
 - **Onda corta (SW):** de 3 a 30 MHz (banda HF). Propagación por onda reflejada en la ionosfera.
 
@@ -68,23 +68,17 @@ Nota: tabla mantenida tal como está, por decisión del autor. Algunos países n
 - **Zona de silencio (skip zone):** a una distancia donde no llega ni la onda de superficie ni la reflejada.
 - **Tormentas solares:** pueden anular la onda reflejada durante minutos.
 
-### Por qué quedan pocas LW (dato verificado en Wikipedia)
+### Por qué quedan pocas LW
 
-- Causas que da la fuente: poca audiencia, falta de LW en los receptores de consumo, interferencias crecientes, ineficiencia energética de la AM y coste eléctrico de los transmisores.
-- Rusia cerró todas sus emisoras de LW entre 2014 y 2015.
-- Europe 1 (183 kHz, Alemania) cerró en 2019; Deutschlandradio Kultur (177 kHz) cerró en 2014.
-- BBC Radio 4 cerró su LW en 198 kHz el 27 de junio de 2026.
-- Según la misma fuente (versión de septiembre de 2026), las únicas emisoras de LW que quedan son las de Rumanía, Polonia, Argelia y Mongolia.
+- Causas (según Wikipedia): poca audiencia, falta de LW en los receptores de consumo, interferencias y coste energético de la emisión.
+- Quedan muy pocas emisoras (versión de Wikipedia de septiembre de 2026: Rumanía, Polonia, Argelia y Mongolia).
 
 ---
 
 ### Estado de la MW en España (verificado)
 
 - **RNE:** RTVE anunció el 18/11/2025 que Radio Nacional y Radio 5 dejan la Onda Media, con cese antes del 31 de diciembre de 2025. La OM de RNE estaba en servicio desde 1937. Fuente: nota de prensa de RTVE, recogida en [gorkazumeta.com](https://www.gorkazumeta.com). Otra fuente sitúa el apagado a comienzos de 2026 ([Serviradio](https://www.serviradio.com)).
-- **COPE:** durante 2026 cierra emisoras de OM. Las emisoras afectadas emiten un mensaje en bucle que invita a seguir la programación en FM o en redes sociales. Fuente: [Guía de la Radio](https://www.guiadelaradio.com).
-  - Valencia 1296 kHz: mensaje en bucle; posible cierre alrededor del 31 de marzo de 2026.
-  - Gran Canaria 837 kHz: apagada el 30 de junio de 2026 ([Serviradio](https://www.serviradio.com)).
-  - Murcia 711 kHz, Badajoz 1269 kHz, Ferrol 837 kHz, León 1215 kHz, Ourense 1143 kHz y Zaragoza 1053 kHz: mensaje en bucle según informan grupos de escucha; no confirmado emisora a emisora.
+- **COPE:** durante 2026 ha desaparecido alguna emisora de OM, como la de Valencia (1296 kHz), que emitió un mensaje en bucle invitando a seguir la emisora en FM o redes sociales. Fuente: [Guía de la Radio](https://www.guiadelaradio.com).
 - La situación cambia con rapidez: confirmar antes de publicar (ver sección 10).
 
 ---
@@ -92,7 +86,6 @@ Nota: tabla mantenida tal como está, por decisión del autor. Algunos países n
 ## 3. Espectro AM y separación de canales
 
 - La mayoría de emisoras internacionales de SW usan **AM** con **separación de 5 kHz** entre canales (asignaciones WRC-97). Algunas usan BLU (banda lateral única).
-- DRM (radio digital) usa canales de 10 kHz o 20 kHz. Encaja mejor en el capítulo 13.
 - **Propuesta de visualización (versión simplificada respecto al capítulo 4):** una portadora con dos bandas laterales simétricas. Mostrar que el audio ocupa ambos lados de la portadora y que el canal vecino cae dentro de esa zona.
 - **Solapamiento de canales:**
   - En AM, la señal ocupa el doble del ancho de banda del audio: portadora más dos bandas laterales. Con audio de unos 4,5 kHz, cada emisión ocupa unos 9 kHz.
@@ -103,7 +96,7 @@ Nota: tabla mantenida tal como está, por decisión del autor. Algunos países n
     - Audio: limitar el ancho de banda del audio reduce el solapamiento.
   - Comparación: en MW, con canales de 9 kHz y audio de 4,5 kHz, las bandas laterales de canales contiguos llegan justo a tocarse (deducción a partir de las cifras anteriores).
   - Estado de verificación: la separación de 5 kHz y la relación de ancho AM = 2 × audio están verificadas (Wikipedia). El valor de 4,5 kHz y el método de coordinación exacto no están verificados con fuente oficial (ver sección 10).
-- **Comparación con MW y LW:** canales de 9 kHz (Región 1) o 10 kHz (Región 2). Esto es parte del Plan de Ginebra de 1975 para LW: frecuencias múltiplos de 9 kHz entre 153 y 279 kHz.
+- **Comparación con MW:** canales de 9 kHz (Región 1) o 10 kHz (Región 2).
 
 ---
 
@@ -135,6 +128,7 @@ Indicaciones para el lector:
 
 - Hacerlo de noche. En MW, la propagación de noche depende de la ionosfera, y no todas las noches hay la misma propagación: una emisora puede oírse una noche y no la siguiente.
 - Anotar fecha, hora en UTC y local, frecuencia y si se recibió, con qué calidad.
+- La emisora de 252 kHz (LW) no se recibe con el RTL-SDR V4; hace falta un receptor que cubra LW.
 - Si hace falta, contrastar con [mwlist.org](https://www.mwlist.org) (requiere registro).
 
 ---
@@ -166,16 +160,16 @@ Propuesta de actividad: que el lector busque un canal en EiBi o Shortwave.Live q
 
 ## 8. Temas complementarios (propuestos)
 
-1. Ondas largas: por qué existen, qué las hace distintas y qué queda hoy.
+1. Ondas largas: contexto breve, con poco peso en el capítulo.
 2. Ondas medias: cobertura local, nocturna y de invierno.
 3. Onda corta: las bandas de broadcasting y la propagación de día y de noche.
 4. Espectro AM: portadora y bandas laterales, con una visualización.
-5. Separación de canales: 5 kHz en SW, 9 kHz en LW/MW Región 1.
+5. Separación de canales: 5 kHz en SW y 9 kHz en MW (Región 1).
 6. Cómo encontrar emisoras: EiBi, Shortwave.Live, short-wave.info, mwlist.
 7. Emisiones fuera de banda (outbanders): definición, ejemplos y cómo detectarlas.
 8. Radiodifusión en MW en España: estado actual (verificado, ver sección 2).
 9. Piratas y clandestinas: definición y diferencia con la escucha legal.
-10. Radioescucha práctica: antena de ferrita para LW/MW. No todos los RTL-SDR llegan a LW y MW: en general, los modelos sin modo HF necesitan direct sampling o un convertidor por debajo de unos 24 MHz. El RTL-SDR Blog V4 tiene modo HF propio (sin direct sampling) y requiere el driver de RTL-SDR Blog.
+10. Radioescucha práctica: antena de ferrita para MW y ajuste del ancho de banda del filtro. El RTL-SDR V4 cubre de 500 kHz a 1766 MHz, por lo que no recibe LW; el lector debe revisar las capacidades de su propio receptor.
 
 ---
 
@@ -185,6 +179,7 @@ Propuesta de actividad: que el lector busque un canal en EiBi o Shortwave.Live q
 - Diario de propagación: anotar qué bandas se escuchan de día y de noche durante una semana.
 - Caza de outbanders: encontrar una emisión fuera de banda con Shortwave.Live y compararla con la tabla de bandas.
 - Viaje a la MW: escuchar la misma emisora en MW de día y de noche y comparar la calidad.
+- Ajuste del ancho de banda: con una emisora de AM sintonizada, estrechar el filtro del software SDR y observar cómo se atenúa el canal vecino y cómo cambia la calidad del audio.
 - Barrido de una banda: elegir una banda de la tabla de la sección 2 (por ejemplo, 41 m o 31 m) y, con el SDR en modo espectro, anotar qué señales aparecen, en qué frecuencias y con qué intensidad visual. Comparar después con lo que se escucha. Es habitual encontrar emisiones de China Radio International, muy intensas, que sirven para mostrar que la potencia del transmisor se ve claramente en el espectro.
 
 ---
@@ -192,10 +187,9 @@ Propuesta de actividad: que el lector busque un canal en EiBi o Shortwave.Live q
 ## 10. Pendiente de verificar antes de escribir
 
 - [ ] Cifra de 4,5 kHz de ancho de audio en AM de SW y método de coordinación entre canales vecinos (sección 3): confirmar con fuente oficial (reglamento de la UIT o planes de coordinación HF).
-- [ ] Estado actual de cada emisora de COPE en OM (sección 2): la situación cambia deprisa; confirmar antes de publicar.
-- [ ] Cobertura exacta en LW y MW del RTL-SDR V4 (sección 8, punto 10): comprobar en la ficha del fabricante.
+- [ ] Estado actual de las emisoras de COPE en OM (sección 2): confirmar antes de publicar.
 
-Resueltos: frecuencias de Argelia (mantenidas), CRI en español (confirmado), tabla de bandas de SW (mantenida), estado de la MW en España (verificado), compatibilidad general de SDR (sección 8, punto 10).
+Resueltos: frecuencias de Argelia (mantenidas), CRI en español (confirmado), tabla de bandas de SW (mantenida), estado de la MW en España (verificado), cobertura del RTL-SDR V4 (500 kHz a 1766 MHz, dato del autor; sección 8, punto 10).
 
 ---
 
