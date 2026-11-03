@@ -1,0 +1,154 @@
+<div class="space-y-6">
+    <!-- Header del Índice -->
+    <div class="border-b border-radio-border pb-4">
+        <div class="inline-flex items-center space-x-2 px-2.5 py-1 rounded-full bg-radio-cyan/10 border border-radio-cyan/30 text-radio-cyan text-xs font-mono mb-2">
+            <i class="fa-solid fa-list-ol"></i>
+            <span>ESTRUCTURA EDITORIAL Y ENTREGAS</span>
+        </div>
+        <h1 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">
+            ÍNDICE GENERAL DEL MANUAL
+        </h1>
+        <p class="text-sm text-slate-400 mt-1">
+            Explora la hoja de ruta completa para dominar la radioescucha y el análisis del espectro electromagnético.
+        </p>
+    </div>
+
+    <div class="space-y-4">
+        <!-- MÓDULO 0 -->
+        <div class="p-5 rounded-xl border border-radio-accent/40 bg-radio-dark/80 hover:border-radio-accent/70 transition-all">
+            <div class="flex items-center justify-between border-b border-radio-border/60 pb-3 mb-3">
+                <div class="flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-radio-accent"></span>
+                    <h2 class="text-radio-accent font-bold text-base m-0">MÓDULO 0: LA BIENVENIDA Y EL EQUIPO DE CACERÍA</h2>
+                </div>
+                <span class="text-[10px] font-mono font-bold bg-radio-accent/20 text-radio-accent px-2 py-0.5 rounded border border-radio-accent/30">DISPONIBLE</span>
+            </div>
+            <ul class="text-xs md:text-sm space-y-2 text-slate-200">
+                <li class="flex items-start space-x-2.5 p-1.5 rounded hover:bg-radio-border/40 transition-colors cursor-pointer" onclick="loadChapter('cap0')">
+                    <i class="fa-solid fa-circle-play text-radio-accent mt-0.5 text-xs"></i>
+                    <div>
+                        <span class="font-bold underline text-white">Capítulo 0: El mapa del tesoro invisible</span>
+                        <p class="text-slate-400 text-xs mt-0.5">Qué es el SDR, el analizador de espectro, la cascada (Waterfall), la fórmula de la frecuencia y longitud de onda, y el mapa de bandas.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- MÓDULO 1 -->
+        <div class="p-5 rounded-xl border border-radio-cyan/40 bg-radio-dark/80 hover:border-radio-cyan/70 transition-all">
+            <div class="flex items-center justify-between border-b border-radio-border/60 pb-3 mb-3">
+                <div class="flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-radio-cyan"></span>
+                    <h2 class="text-radio-cyan font-bold text-base m-0">MÓDULO 1: SEÑALES LOCALES Y VISIÓN DIRECTA (VHF / UHF)</h2>
+                </div>
+                <span class="text-[10px] font-mono font-bold bg-radio-cyan/20 text-radio-cyan px-2 py-0.5 rounded border border-radio-cyan/30">DISPONIBLE</span>
+            </div>
+            <ul class="text-xs md:text-sm space-y-2 text-slate-200">
+                <li class="flex items-start space-x-2.5 p-1.5 rounded hover:bg-radio-border/40 transition-colors cursor-pointer" onclick="loadChapter('cap1')">
+                    <i class="fa-solid fa-circle-play text-radio-cyan mt-0.5 text-xs"></i>
+                    <div>
+                        <span class="font-bold underline text-white">Capítulo 1: Cacería en el vecindario: Walkie-Talkies PMR446 y el secreto de los subtonos</span>
+                        <p class="text-slate-400 text-xs mt-0.5">Frecuencias libres de 446 MHz, subtonos CTCSS/DCS, el mito de los subcanales privados y decodificación con SDR++.</p>
+                    </div>
+                </li>
+                <li class="flex items-start space-x-2.5 p-1.5 rounded hover:bg-radio-border/40 transition-colors cursor-pointer" onclick="loadChapter('cap2')">
+                    <i class="fa-solid fa-circle-play text-radio-cyan mt-0.5 text-xs"></i>
+                    <div>
+                        <span class="font-bold underline text-white">Capítulo 2: Hablando con el cielo: La Banda Aérea de aviación</span>
+                        <p class="text-slate-400 text-xs mt-0.5">Comunicación en AM entre torres de control y aviones (118-137 MHz), cálculo de antena dipolo y alfabeto ICAO.</p>
+                    </div>
+                </li>
+                <li class="flex items-start space-x-2.5 p-1.5 rounded hover:bg-radio-border/40 transition-colors cursor-pointer" onclick="loadChapter('cap3')">
+                    <i class="fa-solid fa-circle-play text-radio-cyan mt-0.5 text-xs"></i>
+                    <div>
+                        <span class="font-bold underline text-white">Capítulo 3: Trampolines en las montañas: Repetidores de VHF y UHF</span>
+                        <p class="text-slate-400 text-xs mt-0.5">Offsets, subtonos CTCSS, indicativos y distritos españoles, repetidores de 2m/70cm y captura simultánea en cascada.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- MÓDULO 2 -->
+        <div class="p-5 rounded-xl border border-amber-500/40 bg-radio-dark/80 hover:border-amber-500/70 transition-all">
+            <div class="flex items-center justify-between border-b border-radio-border/60 pb-3 mb-3">
+                <div class="flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+                    <h2 class="text-amber-400 font-bold text-base m-0">MÓDULO 2: CRUZANDO OCÉANOS EN ONDA CORTA (HF)</h2>
+                </div>
+                <span class="text-[10px] font-mono font-bold bg-amber-500/20 text-amber-400 px-2 py-0.5 rounded border border-amber-500/30">EN CURSO</span>
+            </div>
+            <ul class="text-xs md:text-sm space-y-2 text-slate-200">
+                <li class="flex items-start space-x-2.5 p-1.5 rounded hover:bg-radio-border/40 transition-colors cursor-pointer" onclick="loadChapter('cap4')">
+                    <i class="fa-solid fa-circle-play text-amber-400 mt-0.5 text-xs"></i>
+                    <div>
+                        <span class="font-bold underline text-white">Capítulo 4: Los exploradores globales: Radioaficionados en HF y modos SSB / CW</span>
+                        <span class="ml-2 text-[10px] font-mono bg-amber-500/20 text-amber-400 px-1.5 py-0.5 rounded border border-amber-500/30 font-bold">¡NUEVO!</span>
+                        <p class="text-slate-400 text-xs mt-0.5">Propagación ionosférica, antenas HF, bandas WARC y 60m, ajuste de LSB/USB y decodificación manual o por software del código Morse.</p>
+                    </div>
+                </li>
+                <li class="p-1.5 opacity-70">
+                    <span class="font-semibold text-slate-300">Capítulo 5: Voces sin frontera: Broadcasting internacional, emisoras piratas y "Outbanders"</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Sintonización de radios internacionales en AM, emisiones culturales lejanas y transmisiones no oficiales fuera de banda.</p>
+                </li>
+                <li class="p-1.5 opacity-70">
+                    <span class="font-semibold text-slate-300">Capítulo 6: Señales meteorológicas: VOLMET, Fax Meteorológico (WEFAX) y boletines marinos</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Boletines de voz para aviación, partes del mar en alta mar y recepción de mapas del tiempo visuales en HF Fax.</p>
+                </li>
+                <li class="p-1.5 opacity-70">
+                    <span class="font-semibold text-slate-300">Capítulo 7: Aviones sobre el océano (Comunicaciones MWARA)</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Seguimiento de aeronaves transoceánicas fuera de la cobertura VHF mediante frecuencias HF de larga distancia en aviación.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- MÓDULO 3 -->
+        <div class="p-5 rounded-xl border border-purple-500/30 bg-radio-dark/80">
+            <div class="flex items-center justify-between border-b border-radio-border/60 pb-3 mb-3">
+                <div class="flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-purple-400"></span>
+                    <h2 class="text-purple-400 font-bold text-base m-0">MÓDULO 3: MISTERIOS EN HF</h2>
+                </div>
+                <span class="text-[10px] font-mono bg-slate-800 text-slate-400 px-2 py-0.5 rounded border border-slate-700">PRÓXIMAMENTE</span>
+            </div>
+            <ul class="text-xs md:text-sm space-y-2 text-slate-200">
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 8: Criptografía y guerra fría: Estaciones de Números y redes militares (HFGCS)</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Emisiones secretas del espionaje internacional, transmisiones en bucle de secuencias numéricas y redes estratégicas de defensa.</p>
+                </li>
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 9: Datos en las olas: Modos Digitales de Radioaficionado (FT8, RTTY y PSK)</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Captura e interpretación de textos y datos binarios en la cascada usando programas decodificadores como WSJT-X y FLdigi.</p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- MÓDULO 4 -->
+        <div class="p-5 rounded-xl border border-emerald-500/30 bg-radio-dark/80">
+            <div class="flex items-center justify-between border-b border-radio-border/60 pb-3 mb-3">
+                <div class="flex items-center space-x-2">
+                    <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+                    <h2 class="text-emerald-400 font-bold text-base m-0">MÓDULO 4: RASTREANDO EL CIELO Y EL MAR EN TIEMPO REAL</h2>
+                </div>
+                <span class="text-[10px] font-mono bg-slate-800 text-slate-400 px-2 py-0.5 rounded border border-slate-700">PRÓXIMAMENTE</span>
+            </div>
+            <ul class="text-xs md:text-sm space-y-2 text-slate-200">
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 10: Radares de aviones y barcos (Transpondedores ADS-B y Sistema AIS en 162 MHz)</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Decodificación de paquetes de posición para posicionar aviones en 1090 MHz y buques en rutas marítimas sobre un mapa en vivo.</p>
+                </li>
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 11: Fotografía desde el espacio (Satélites NOAA/Meteor e imágenes SSTV de la ISS)</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Seguimiento de órbitas polares, recepción de fotografías meteorológicas directamente del espacio y diploma SSTV desde la Estación Espacial.</p>
+                </li>
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 12: Escuchar sin antena ni SDR — La red WebSDR</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Uso de receptores remotos conectados a Internet en todo el planeta para analizar espectros lejanos desde cualquier navegador.</p>
+                </li>
+                <li class="p-1.5">
+                    <span class="font-semibold text-slate-300">Capítulo 13: Radio digital (Emisiones broadcast en DRM y DAB+)</span>
+                    <p class="text-slate-500 text-xs mt-0.5">Nuevos formatos de transmisión de audio digital, multiplexación de datos y sintonización de estaciones digitales terrestres.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
